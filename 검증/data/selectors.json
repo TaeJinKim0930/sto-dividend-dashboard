@@ -1,0 +1,29 @@
+{
+ "0x712d5fa2": [
+  "issueTokensCustom(address,uint256,uint256,uint256,string,uint64)"
+ ],
+ "0x88854f22": [
+  "issueTokens(string,address,uint256[],string,uint256[],uint64[],string,string,uint256[],uint256[])"
+ ],
+ "0xb28d07c3": [
+  "bulkIssuance(address[],uint256[],uint256)"
+ ],
+ "0xdf9767d6": [
+  "swapDSToken(uint256)"
+ ],
+ "0x39fadcec": [
+  "bulkRegisterAndIssuance((string,address,uint256[],string,uint256[],uint64[],string,uint256[],uint256[])[])"
+ ],
+ "0xa60eb4c8": [
+  "deliver(bytes[],bytes,address,bytes)"
+ ],
+ "0x06fc6687": [
+  "bridgeDSTokens(uint16,uint256)"
+ ],
+ "0x15f570dc": [
+  "burn(address,uint256,string)"
+ ],
+ "0x0c32f464": [
+  "signedDataExecution(address,address,bytes,bytes)"
+ ]
+}

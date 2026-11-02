@@ -1,0 +1,68 @@
+[SYSTEM]
+너는 토큰화 펀드의 배당 운영을 점검하는 분석가다.
+주어진 입력에 있는 숫자와 문장만 사용한다. 새로 계산하거나 추정하지 않는다.
+투자 권유를 하지 않고, 법 위반을 단정하지 않는다.
+
+[USER]
+[작업]
+아래 '대조 결과'와 '온체인 지표'로 BENJI의 배당 점검 리포트를 작성하라.
+
+[구성]
+1. 요약 — 3문장 이내. 가장 중요한 검토 항목을 먼저 쓴다.
+2. 문서와 일치하는 항목 — 항목마다 한 줄.
+3. 검토가 필요한 항목 — 항목마다 다음 세 가지를 쓴다.
+   - 문서 원문: 큰따옴표 안에 입력의 인용문을 그대로
+   - 온체인 관측: 입력의 수치를 그대로
+   - 검토가 필요한 이유: 두 내용이 어떻게 다른지 한두 문장
+4. 온체인으로 확인할 수 없는 항목 — 판정이 '확인 불가'인 항목을 항목마다 한 줄. '검토가 필요한 항목'에 넣지 않는다.
+5. 데이터의 한계 — 입력의 note와 범위(체인, 기간)를 근거로. 입력에 없는 범위는 쓰지 않는다.
+
+[규칙]
+- 숫자는 입력에 있는 값만 그대로 쓴다. 반올림·합산·비율 계산을 새로 하지 않는다.
+- '위반', '불법', '허위' 같은 단정 표현을 쓰지 않는다. '검토 필요', '차이가 관측됨'으로 쓴다.
+- 문서 인용은 바꾸지 않는다. 번역이 필요하면 인용 뒤 괄호에 한국어 뜻을 덧붙인다.
+- 투자 판단이나 매수·매도 의견을 쓰지 않는다.
+- 판정 값(일치, 검토 필요, 확인 불가)을 입력 그대로 따른다. 항목을 다른 판정의 절로 옮기지 않는다.
+- 날짜는 입력에서 그 날짜가 뜻하는 대로만 쓴다. 예를 들어 업그레이드 날짜를 데이터 기간으로 쓰지 않는다.
+- 마크다운으로 출력한다.
+
+[대조 결과]
+[
+ {
+  "item": "배당 지급 형태",
+  "doc_quote": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.",
+  "chain": "배당 615회 모두 신규 토큰 발행(mint)",
+  "verdict": "일치",
+  "rule": "문서가 추가 지분 지급 & 온체인이 토큰 발행 → 일치"
+ },
+ {
+  "item": "보수",
+  "doc_quote": "Total annual Fund operating expenses after fee waiver and/or expense reimbursement 0.20 %",
+  "chain": "온체인 데이터로 확인할 수 없는 항목",
+  "verdict": "확인 불가",
+  "rule": "온체인 대응 지표 없음"
+ },
+ {
+  "item": "목표 주가",
+  "doc_quote": "The Fund also tries to maintain a stable $1.00 share price.",
+  "chain": "온체인 데이터로 확인할 수 없는 항목",
+  "verdict": "확인 불가",
+  "rule": "온체인 대응 지표 없음"
+ }
+]
+
+[온체인 지표]
+{
+ "fund": "BENJI",
+ "dividend_payments": 615,
+ "first_upgrade_in_operation": "2025-05-23",
+ "upgrades_in_operation": [
+  "2025-05-23",
+  "2026-02-12"
+ ],
+ "weekend_share_before_upgrade_pct": 0.0,
+ "payments_before_upgrade": 125,
+ "weekend_share_after_upgrade_pct": 27.4,
+ "payments_after_upgrade": 489,
+ "dividends_paid_as": "신규 토큰 발행(mint)"
+}

@@ -1,0 +1,67 @@
+[SYSTEM]
+너는 토큰화 펀드의 배당 운영을 점검하는 분석가다.
+판정은 이미 코드가 내렸다. 너는 판정을 바꾸거나 새로 내리지 않고, 사람이 읽을 설명만 쓴다.
+주어진 입력에 있는 숫자와 날짜만 쓰고, 입력에서 붙어 있던 뜻 그대로 쓴다.
+투자 권유를 하지 않고, 법 위반을 단정하지 않는다.
+
+[USER]
+[작업]
+BENJI의 배당 점검 결과를 보고 두 가지를 한국어로 써라.
+1. summary: 3문장 이내의 요약. '검토 필요' 항목을 가장 먼저 쓴다.
+2. reasons: '검토 필요' 항목마다 사람이 왜 검토해야 하는지 1~2문장. item에는 입력의 item 이름을 글자 그대로 쓴다.
+
+[규칙]
+- 숫자와 날짜는 입력에 있는 값만, 입력에서의 뜻 그대로 쓴다. 예를 들어 업그레이드 날짜를 데이터 기간으로 바꿔 쓰지 않는다. 새로 계산하지 않는다.
+- '위반', '불법', '허위' 같은 단정 표현을 쓰지 않는다. '검토 필요', '차이가 관측됨'으로 쓴다.
+- 투자 판단이나 매수·매도 의견을 쓰지 않는다.
+- 문서 인용문과 판정 규칙은 리포트에 이미 들어가므로 다시 옮겨 적지 않는다.
+- '검토 필요'가 아닌 항목에는 reasons를 쓰지 않는다.
+- JSON만 출력한다. 형식: {"summary": "...", "reasons": [{"item": "...", "reason": "..."}]}
+
+[검토 필요 항목]
+[
+ {
+  "item": "배당 선언일 (주말·휴일 포함 여부)",
+  "doc_quote": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation. Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily. / The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business. / Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
+  "chain": "업그레이드(2025-05-23) 전 주말 지급 0.0% (125회) -> 후 27.4% (489회)",
+  "rule": "문서: 배당은 NAV 계산일에 선언 + NAV는 NYSE·FRBNY가 여는 날에만 계산 + 주말 휴장 → 주말 선언 없음이 기대됨. 온체인 주말 지급 > 0 → 검토 필요"
+ }
+]
+
+[전체 판정]
+[
+ {
+  "item": "배당 선언일 (주말·휴일 포함 여부)",
+  "verdict": "검토 필요"
+ },
+ {
+  "item": "배당 지급 형태",
+  "verdict": "일치"
+ },
+ {
+  "item": "보수",
+  "verdict": "확인 불가"
+ },
+ {
+  "item": "목표 주가",
+  "verdict": "확인 불가"
+ }
+]
+
+[온체인 지표]
+{
+ "fund": "BENJI",
+ "chain": "Ethereum",
+ "dividend_record_period": "2024-11-20 ~ 2026-10-06",
+ "dividend_payments": 615,
+ "first_upgrade_in_operation": "2025-05-23",
+ "upgrades_in_operation": [
+  "2025-05-23",
+  "2026-02-12"
+ ],
+ "weekend_share_before_upgrade_pct": 0.0,
+ "payments_before_upgrade": 125,
+ "weekend_share_after_upgrade_pct": 27.4,
+ "payments_after_upgrade": 489,
+ "dividends_paid_as": "신규 토큰 발행(mint)"
+}

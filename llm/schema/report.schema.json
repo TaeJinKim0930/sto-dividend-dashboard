@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReportText",
+  "type": "object",
+  "properties": {
+    "summary": {"type": "string"},
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": {"type": "string"},
+          "reason": {"type": "string"}
+        },
+        "required": ["item", "reason"]
+      }
+    }
+  },
+  "required": ["summary", "reasons"]
+}

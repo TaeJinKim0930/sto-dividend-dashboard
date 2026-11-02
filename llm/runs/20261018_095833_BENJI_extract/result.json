@@ -1,0 +1,78 @@
+{
+ "fund": "BENJI",
+ "source": "SEC EDGAR 485BPOS, 2026-08-01",
+ "model": "mock",
+ "num_ctx": null,
+ "runs": 3,
+ "excerpt_chars": 11991,
+ "excerpts": 15,
+ "seconds": 0.1,
+ "dry_run": true,
+ "terms": {
+  "dividend_declaration_timing": {
+   "value": "each day when it makes its final NAV calculation",
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "declares_on_non_business_days": {
+   "value": false,
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "dividend_payment_form": {
+   "value": "additional shares",
+   "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "reinvestment_frequency": {
+   "value": "daily",
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.",
+   "agreement": 0.67,
+   "statuses": {
+    "verified": 2,
+    "rejected_evidence_not_in_source": 1
+   }
+  },
+  "fund_closed_days": {
+   "value": "weekends and listed holidays",
+   "evidence": "Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "share_price_target": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "rejected_evidence_not_in_source": 3
+   }
+  },
+  "expense_ratio": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "rejected_evidence_not_in_source": 3
+   }
+  },
+  "official_record": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "not_stated": 3
+   }
+  }
+ }
+}

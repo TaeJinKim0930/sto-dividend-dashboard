@@ -1,0 +1,34 @@
+{
+  "dividend_declaration_timing": {
+    "value": "each day when it makes its final net asset value (NAV) calculation",
+    "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation."
+  },
+  "declares_on_non_business_days": {
+    "value": null,
+    "evidence": null
+  },
+  "dividend_payment_form": {
+    "value": "additional shares",
+    "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends."
+  },
+  "reinvestment_frequency": {
+    "value": "daily",
+    "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation and reinvests them daily."
+  },
+  "fund_closed_days": {
+    "value": "the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day. Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
+    "evidence": "The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business. Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day. Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event."
+  },
+  "share_price_target": {
+    "value": "$1.00",
+    "evidence": "The Fund also tries to maintain a stable $1.00 share price."
+  },
+  "expense_ratio": {
+    "value": "0.20%",
+    "evidence": "Total annual Fund operating expenses after fee waiver and/or expense reimbursement 0.20%"
+  },
+  "official_record": {
+    "value": "a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks",
+    "evidence": "The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks."
+  }
+}

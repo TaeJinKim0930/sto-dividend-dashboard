@@ -1,0 +1,77 @@
+{
+ "fund": "BENJI",
+ "source": "SEC EDGAR 485BPOS, 2026-08-01",
+ "model": "qwen2.5:14b",
+ "num_ctx": 16384,
+ "runs": 5,
+ "excerpt_chars": 11991,
+ "excerpts": 15,
+ "seconds": 45.2,
+ "dry_run": false,
+ "terms": {
+  "dividend_declaration_timing": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "rejected_evidence_not_in_source": 5
+   }
+  },
+  "declares_on_non_business_days": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "not_stated": 5
+   }
+  },
+  "dividend_payment_form": {
+   "value": "additional shares",
+   "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "reinvestment_frequency": {
+   "value": "daily",
+   "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "fund_closed_days": {
+   "value": "New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day",
+   "evidence": "The Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "share_price_target": {
+   "value": "stable $1.00 share price",
+   "evidence": "The Fund uses the amortized cost method of valuation to seek to maintain a stable $1.00 share price and does not currently intend to impose liquidity fees on Fund redemptions.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "expense_ratio": {
+   "value": "0.20%",
+   "evidence": "Total annual Fund operating expenses after fee waiver and/or expense reimbursement 0.20 %",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "official_record": {
+   "value": "a proprietary blockchain-integrated system",
+   "evidence": "The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks.",
+   "agreement": 0.6,
+   "statuses": {
+    "verified": 5
+   }
+  }
+ }
+}

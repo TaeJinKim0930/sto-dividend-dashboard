@@ -1,0 +1,316 @@
+Any representation to the contrary is a criminal offense. 9001 P 08/26 Contents Fund Summary Information about the Fund you should know before investing Investment Goal 4 Fees and Expenses of the Fund 4 Principal Investment Strategies 5 Use of BlockChain 6 Principal Risks 7 Performance 10 Investment Manager 11 Sub-Advisor 11 Purchase and Sale of Fund Shares 12 Taxes 12 Payments to Broker-Dealers and Other Financial Intermediaries 12 Fund Details More information on investment policies, practices and risks/financial highlights Investment Goal 13 Principal Investment Policies and Practices 13 Use of BlockChain 14 Principal Risks 20 Management 25 Distributions and Taxes 27 Financial Highlights 29 Your Account Information about account transactions and services Buying Shares 31 Investor Services 34 Selling Shares 36 Exchanging Shares 38 Peer-to-Peer Transfer of Shares 38 Account Policies 42 Questions 47 For More Information Where to learn more about the Fund Back Cover FRANKLIN ONCHAIN U.S.
+
+Annual Fund Operating Expenses (expenses that you pay each year as a percentage of the value of your investment) Management fees 0.15 % Distribution and service (12b-1) fees None Other expenses 0.07 % Total annual Fund operating expenses 0.22 % Fee waiver and/or expense reimbursement 1 - 0.02 % Total annual Fund operating expenses after fee waiver and/or expense reimbursement 0.20 % 1.
+
+A low interest rate environment may prevent the Fund from providing a positive yield or paying Fund expenses out of current income and could impair the Fund's ability to maintain a stable net asset value.
+
+Income: The Fund's distributions to shareholders may decline when prevailing interest rates fall, when the Fund experiences defaults on debt securities it holds or when the Fund realizes a loss upon the sale of a debt security.
+
+Investors should remember that guarantees of timely repayment of principal and interest do not apply to the market prices and yields of the securities or to the net asset value or performance of the Fund, which will vary with changes in interest rates and other market conditions.
+
+Cybersecurity: Cybersecurity incidents, both intentional and unintentional, may allow an unauthorized party to gain access to Fund assets, Fund or customer data (including private shareholder information), or proprietary information, cause the Fund, the investment manager, authorized participants, or index providers (as applicable) and listing exchanges, and/or their service providers (including, but not limited to, Fund accountants, custodians, sub-custodians, transfer agents and financial intermediaries) to suffer data breaches, data corruption or loss of operational functionality or prevent Fund investors from purchasing, redeeming shares or receiving distributions.
+
+You may purchase or redeem shares of the Fund at any time through the App or the Institutional Web Portal (as applicable), although purchases and redemptions of Fund shares will only be processed during normal business hours on business days.
+
+Taxes The Fund's distributions are generally taxable to you as ordinary income.
+
+The investment manager may also hold cash when securities meeting the Fund's investment criteria are unavailable or to maintain liquidity.
+
+A low interest rate environment may prevent the Fund from providing a positive yield or paying Fund expenses out of current income and could impair the Fund’s ability to maintain a stable net asset value.
+
+Income: The Fund's distributions to shareholders may decline when prevailing interest rates fall, when the Fund experiences defaults on debt securities it holds or when the Fund realizes a loss upon the sale of a debt security.
+
+GOVERNMENT MONEY FUND™ FUND DETAILS generally declines during periods of falling benchmark interest rates because the Fund must reinvest the proceeds it receives from existing investments (upon their maturity, prepayment, amortization, sale, call, or buy-back) at a lower rate of interest or return.
+
+Investors should remember that guarantees of timely repayment of principal and interest do not apply to the market prices and yields of the securities or to the net asset value or performance of the Fund, which will vary with changes in interest rates and other market conditions.
+
+Although the transfer agent maintains controls to correct errors or unauthorized transactions when an investor loses their own private key, such intervention may require information collection and operational tasks to accomplish and may render the investor’s holdings unavailable while these activities take place.
+
+Cybersecurity: Cybersecurity incidents, both intentional and unintentional, may allow an unauthorized party to gain access to Fund assets, Fund or customer data (including private shareholder information), or proprietary information, cause the Fund, the investment manager, authorized participants, or index providers (as applicable) and listing exchanges, and/or their service providers (including, but not limited to, Fund accountants, custodians, sub-custodians, transfer agents and financial intermediaries) to suffer data breaches, data corruption or loss of operational functionality or prevent Fund investors from purchasing, redeeming shares or receiving distributions.
+
+Distributions and Taxes Income and Capital Gain Distributions As a regulated investment company, the Fund generally pays no federal income tax on the income and gains it distributes to you.
+
+The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation.
+
+Your account (via the App or Institutional Web Portal) begins to receive dividends beginning on the day the Fund receives your investment, provided the investment is received by the Fund on any business day in good order prior to 2 p.m.
+
+Pacific time or the Fund’s final (close of business) NAV calculation time, whichever is earlier.
+
+Dividends will be received by your account through the business day prior to the day on which your proceeds are sent to you.
+
+The Fund may distribute income dividends and capital gains more frequently, if necessary, in order to reduce or eliminate federal excise or income taxes on the Fund.
+
+The amount of any distribution will vary, and there is no guarantee the Fund will pay either income dividends or capital gain distributions.
+
+Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.
+
+After the close of each calendar year, you will receive tax information from the Fund with respect to the federal income tax treatment of the Fund’s distributions occurring during the prior calendar year.
+
+If the Fund finds it necessary to reclassify its distributions after you receive your tax information, the Fund will send you revised tax information.
+
+Distributions declared in October, November or December to shareholders of record in such month and paid in January are taxable as if they were paid in December.
+
+Additional tax information about the Fund’s distributions is available through the App or Institutional Web Portal or online at www.franklintempleton.com/FOBXX.
+
+Tax Considerations Fund distributions, which will be automatically reinvested in additional shares, are generally taxable to you as ordinary income, capital gains or some combination of both.
+
+Investment company dividends paid to you from interest earned on certain www.franklintempleton.com Prospectus 27 FRANKLIN ONCHAIN U.S.
+
+Dividend income.
+
+Income dividends are generally subject to tax at ordinary rates.
+
+Because the Fund invests primarily in debt securities, it is expected that none of the Fund's income dividends will be qualified dividends subject to reduced rates of taxation to individuals.
+
+A return-of-capital distribution is generally not taxable but will reduce the cost basis of your shares, and will result in a higher capital gain or a lower capital loss when you later sell your shares.
+
+Fund distributions of short-term capital gains are also subject to tax at ordinary rates.
+
+Because the Fund seeks to maintain a $1.00 per share NAV, sales of its shares will not generally result in a taxable capital gain or loss for federal or state income tax purposes.
+
+An additional 3.8% Medicare tax is imposed on certain net investment income (including ordinary dividends and capital gain distributions received from the Fund and net gains from redemptions or other taxable dispositions of Fund shares) of U.S. individuals, estates and trusts to the extent that such person’s “modified adjusted gross income” (in the case of an individual) or “adjusted gross income” (in the case of an estate or trust) exceeds a threshold amount.
+
+A shareholder may be subject to backup withholding on any distributions of income and capital gains if the shareholder has provided either an incorrect tax identification number or no number at all, is subject to backup withholding by the IRS for failure to properly report payments of interest or dividends, has failed to certify that the shareholder is not subject to backup withholding, or has not certified that the shareholder is a U.S. person (including a U.S. resident alien).
+
+Distributions of ordinary income and capital gains, if any are generally subject to state and local taxes.
+
+However distributions of ordinary income paid to individual shareholders from interest earned by the Fund on certain U.S.
+
+Shareholders should contact their tax advisors with respect to the state and local income tax consequences of investing in the Fund, including whether Fund dividends derived from interest on U.S. government obligations held by the Fund qualify for tax free treatment. 28 Prospectus www.franklintempleton.com FRANKLIN ONCHAIN U.S.
+
+Non-U.S. investors may be subject to U.S. withholding tax at 30% or a lower treaty rate on Fund dividends of ordinary income.
+
+Exemptions from U.S. withholding tax are generally provided for capital gains realized on the sale of Fund shares, capital gain dividends paid by the Fund from net long-term capital gains, short-term capital gain dividends paid by the Fund from net short-term capital gains and interest-related dividends paid by the Fund from its qualified net interest income from U.S. sources.
+
+However, notwithstanding such exemptions from U.S. withholding tax at source, any such dividends and distributions of income and capital gains will be subject to backup withholding at a rate of 24% if you fail to properly certify that you are not a U.S. person.
+
+Payments to a shareholder that is either a foreign financial institution or a non-financial foreign entity within the meaning of the Foreign Account Tax Compliance Act (FATCA) may be subject to a 30% withholding tax on income dividends paid by the Fund.
+
+This discussion of "Distributions and Taxes" is for general information only and is not tax advice.
+
+The total returns represent the rate that an investor would have earned or lost on an investment in the Fund assuming reinvestment of dividends and capital gains.
+
+Government Money Fund Year Ended March 31, 2026 2025 2024 2023 2022 a Per share operating performance (for a share outstanding throughout the year) Net asset value, beginning of year $1.00 $1.00 $1.00 $1.00 $1.00 Income from investment operations: Net investment income b 0.039 0.046 0.050 0.042 — c Net realized gains (losses) — 0.001 — (0.015 ) — Total from investment operations 0.039 0.047 0.050 0.027 — Less distributions from: Net investment income (0.039 ) (0.047 ) (0.050 ) (0.027 ) (— ) c Net asset value, end of year $1.00 $1.00 $1.00 $1.00 $1.00 Total return d 3.94% 4.81% 5.12% 2.79% 0.02% Ratios to average net assets e Expenses before waiver and payments by affiliates 0.22% 0.22% 0.26% 0.89% 93.40% Expenses net of waiver and payments by affiliates 0.20% 0.20% 0.20% 0.20% 0.06% Net investment income 3.86% 4.63% 5.04% 4.32% 0.02% Supplemental data Net assets, end of year (000’s) $843,836 $687,263 $360,554 $272,929 $1,958 a.
+
+If the Fund is able to make investments within one business day, it may accept your order with payment in other than federal funds (namely, electronic funds transfer). www.franklintempleton.com Prospectus 31 FRANKLIN ONCHAIN U.S.
+
+Similarly, the Fund is not registered, and shares of the Fund have not been qualified for distribution, in any member country of the European Union (EU) or European Economic Area (EEA), and may not be directly or indirectly offered or distributed in any such country.
+
+If an investor becomes a Canadian, EU or EEA resident after purchasing shares of the Fund, the investor will not be able to purchase any additional shares of the Fund (other than reinvestment of dividends and capital gains).
+
+GOVERNMENT MONEY FUND™ YOUR ACCOUNT Investor Services Distributions Distributions will be automatically reinvested in the Fund.
+
+Certain methods of contacting us (such as by phone or via the App or Institutional Web Portal) may be unavailable or delayed during periods of unusual market activity.
+
+GOVERNMENT MONEY FUND™ YOUR ACCOUNT Selling Shares You can redeem your shares at any time through the App or Institutional Web Portal, although redemptions of Fund shares will only be processed during normal business hours on business days.
+
+Proceeds sent by ACH generally will be available within two to three business days.
+
+Peer-to-peer transfers of Fund shares can occur at any time on any given day, including outside of the Fund’s normal business hours. · Upon the Fund’s next final (close of business) NAV calculation time after any transfer requests have been completed, the Fund’s transfer agent will use Franklin Templeton’s patent pending method to distribute Intraday Yield by calculating the portion of the Fund’s income dividends from its net investment income for that NAV cycle that will be allocated to the transferor and the transferee based on the period of time each of the transferor and transferee held such transferred shares during such NAV cycle.
+
+Thus, the transferee will effectively begin accruing income dividends from the Fund’s net investment income immediately upon the transfer.
+
+For example, if the transferor and the transferee each held the shares for 12 hours of a 24-hour NAV cycle, each would receive 50% of the dividend distribution for that NAV cycle.
+
+Despite the simplicity of this example, the Fund’s dividend distribution calculation can take into account any number of transfers of any amounts between any number of participants during a NAV cycle. 38 Prospectus www.franklintempleton.com FRANKLIN ONCHAIN U.S.
+
+GOVERNMENT MONEY FUND™ YOUR ACCOUNT · Notwithstanding the fact that the Fund calculates the proportionate dividend for transfers following the processing of transfer requests, the Fund does not require that peer-to-peer transfers occur at NAV. · Scheduled transfers requested through the Benji mobile app will be processed at the Fund’s next NAV calculation time on the date of the scheduled transfer. · A whitelisted investor must be aware of other whitelisted investors who are available to enter into peer-to-peer transfers and neither the Fund nor its transfer agent will play any role in connecting transferors and transferees. · Peer-to-peer transfers do not constitute a public trading market and Fund shares will not be listed for trading on any such market, including a national securities exchange or an alternative trading system operating by a registered broker that is subject to Regulation ATS. · To the extent investors engage in peer-to-peer transfers at a price other than NAV, such transfers may, in certain circumstances, have legal implications for those investors under the federal securities laws or otherwise. · The transfer agent cannot ensure the reliability of any transfer of other assets negotiated in connection with peer-to-peer transfers other than transfers of Fund shares that a shareholder instructs the transfer agent to make. · Blockchain network(s) on which a peer-to-peer transfer is recorded may impose transaction fees to validate the transaction on the network.
+
+GOVERNMENT MONEY FUND™ YOUR ACCOUNT Account Policies Calculating Share Price When you buy shares, you pay the NAV per share.
+
+When you sell shares, you receive the NAV.
+
+The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business.
+
+Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr.
+
+Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.
+
+In the event the Federal Reserve wire payment system is open and the NYSE is open, the Fund may not calculate its NAV and may close for purchase or redemption transactions if—due to an emergency or other unanticipated event—the bond markets are closed for business as recommended by the Securities Industry and Financial Markets Association (SIFMA).
+
+In the event the NYSE does not open for business because of an emergency or other unanticipated event, the Fund may, but is not required to, calculate its NAV and open for purchase or redemption transactions if the Federal Reserve wire payment system is open and the bond markets are open.
+
+The Fund typically calculates its NAV as of each hour from 8:00 a.m.
+
+(Eastern time) until its close of business on each Fund business day (normally, 5:00 p.m.
+
+If the Fund determined not to make an intraday calculation, purchases or redemptions would be effected at the next determined NAV, which may be greater or less than the price at which the purchase or redemption would otherwise have been effected.
+
+On any day when the NYSE, the FRBNY or the bond markets (as recommended by SIFMA) close early due to an unanticipated event, or if trading on the NYSE is restricted, an emergency arises or as otherwise permitted by the SEC, the Fund reserves the right to close early and make its final NAV calculation as of the time of its early close.
+
+When SIFMA recommends an early close to the bond markets on a business day before or after a day on which a holiday is celebrated, the Fund reserves the right to close at or prior to the SIFMA recommended closing time.
+
+The Fund’s NAV per share is readily available through the App or Institutional Web Portal and online at www.franklintempleton.com/FOBXX.
+
+Those orders will be priced at the next NAV calculated after acceptance of the order by the financial intermediary or its agent.
+
+Requests to buy and sell shares are processed at the NAV next calculated after we receive your request in proper form.
+
+You should expect to incur transaction costs upon the disposition of the securities received in the distribution.
+
+Additional Policies Please note that the Fund maintains additional policies and reserves certain rights, including: · The Fund may restrict, reject or cancel any purchase orders. · Typically, redemptions are processed by the next business day provided the redemption request is received in proper form and good order, but may take up to seven days to be processed if making immediate payment would adversely affect the Fund or there is another cause for delay (for example, if you sell shares recently purchased, proceeds may be delayed until your electronic funds transfer has cleared).
+
+If a redemption request is redeemed in-kind, investors should expect to incur transaction costs upon the disposition of the securities received in the distribution. · You may only buy shares of a fund eligible for sale in your state or jurisdiction.
+
+Contents Goals, Strategies and Risks 2 Officers and Trustees 21 Proxy Voting Policies and Procedures 26 Management and Other Services 26 Portfolio Transactions 29 Distributions and Taxes 30 Organization, Voting Rights and Principal Holders 34 Buying and Selling Shares 35 Pricing Shares 37 The Underwriter 37 Description of Ratings 37 Appendix A A- 1 Mutual funds, annuities, and other investment products: • are not insured by the Federal Deposit Insurance Corporation, the Federal Reserve Board, or any other agency of the U.S. government; • are not deposits or obligations of, or guaranteed or endorsed by, any bank; and • are subject to investment risks, including the possible loss of principal. 3355 Data Drive Rancho Cordova, CA 95670-7312 (800) DIAL BEN ® /342-5236 1 9001 SAI 08/26 Goal, Strategies and Risks The following information provided with respect to the Fund is in addition to that included in the Fund’s prospectus.
+
+Government and securities (including repurchase agreements) that will mature or are subject to a demand feature that is exercisable and payable within one business day or amounts receivable and due unconditionally within one business day on pending sales of portfolio securities. "Weekly liquid assets" are cash (including demand deposits), direct obligations of the U.S.
+
+Government agency/instrumentality discount notes (without provision for the payment of interest) with remaining maturities of 60 calendar days or less, and securities (including repurchase agreements) that will mature or are subject to a demand 3 feature that is exercisable and payable within five business days or amounts receivable and due unconditionally within five business days on pending sales of portfolio securities.
+
+In the event that (a) the Fund, at the end of a business day, has invested less than 10% of its total assets in weekly liquid assets or (b) the Fund’s price per share as computed for the purpose of distribution, redemption and repurchase, rounded to the nearest 1%, has deviated from the stable price established by the Fund’s board of trustees or (c) the Trust’s board of trustees, including a majority of trustees who are not interested persons of the Trust as defined in the 1940 Act, determines that such a deviation is likely to occur, and the board of trustees, including a majority of trustees who are not interested persons of the Trust, irrevocably has approved the liquidation of the Fund, the Fund's board of trustees has the authority to suspend redemptions of Fund shares.
+
+The Fund is required to maintain continuous asset coverage of at least 300% with respect to such borrowings and to reduce the amount of its borrowings (within three days excluding Sundays and holidays) to restore such coverage if it should decline to less than 300% due to market fluctuations or otherwise.
+
+Leveraging by means of borrowing may exaggerate the effect of any increase or decrease in the value of portfolio securities on the Fund's net asset value, and money borrowed will be subject to interest and other costs (which may include commitment fees and/or the cost of maintaining minimum average balances), which may or may not exceed the income or gains received from the securities purchased with borrowed funds.
+
+A company typically meets its payment obligations associated with its outstanding debt securities before it declares and pays any dividend to holders of its equity securities.
+
+When a fund borrows money from another fund under the Interfund Lending Program, there is a risk that the Interfund Loan could be called on one business day’s notice, in which case the borrowing fund may have to utilize a line of credit, which would likely involve higher rates, seek an Interfund Loan from another fund, or liquidate portfolio securities if no lending sources are available to meet its liquidity needs.
+
+Each Interfund Loan may be called on one business day’s notice by a lending fund and may be repaid on any day by a borrowing fund.
+
+Federal income taxes generally accrue on stripped securities each year although no cash income is received until maturity, and the Fund may be required to sell portfolio securities that it would otherwise continue to hold in order to obtain sufficient cash to make distributions to shareholders required for U.S. tax purposes.
+
+The amount and rate of distributions that the Fund's shareholders receive are affected by the income that the Fund receives from its portfolio holdings.
+
+If the income is reduced, distributions by the Fund to shareholders may be less.
+
+The Fund may be required to sell portfolio securities that it would otherwise continue to hold in order to obtain sufficient cash to make the distribution to shareholders required for U.S. tax purposes.
+
+When homeowners refinance their mortgages, the investor in the underlying pool of mortgage-backed securities (such as a fund) receives its principal back sooner than expected, and must reinvest at lower, prevailing rates.
+
+Cybersecurity attacks may also be carried out in a manner that does not require gaining unauthorized access, such as causing denial-of-service attacks on the Fund’s websites (i.e., efforts to make network services unavailable to intended users).
+
+Cybersecurity incidents affecting the Fund’s investment manager and other service providers to the Fund or its shareholders (including, but not limited to, sub-advisors, accountants, custodians, sub-custodians, transfer agents and financial intermediaries) have the ability to cause disruptions and impact business operations, potentially resulting in financial losses to both the Fund and its shareholders, interference with the Fund’s ability to calculate its net asset value, impediments to trading, the inability of Fund shareholders to transact business and the Fund to process transactions (including fulfillment of purchases and redemptions), violations of applicable privacy and other laws (including the release of private shareholder information) and attendant breach notification and credit monitoring costs, regulatory fines, penalties, litigation costs, reputational damage, reimbursement or other compensation costs, forensic investigation and remediation costs, and/or additional compliance costs.
+
+Although the transfer agent maintains controls to correct errors or unauthorized transactions when an investor loses their own private key, such intervention may require information collection and operational tasks to accomplish and may render the investor’s holdings unavailable while these activities take place.
+
+Dollar equivalent cost of a business level transaction performed by the transfer agent (e.g., a distribution, a subscription, a redemption, a transfer).
+
+New or changing laws and regulations or interpretations of existing laws and regulations may adversely impact the Fund’s ability to issue and redeem shares or otherwise make distributions on shares, the secondary market liquidity and market price of shares (should such secondary market liquidity be available in the future), shareholders’ ability to access or otherwise utilize an exchange or platform for trading of the shares (should such a platform or exchange exist in the future and such activity be permitted by the Fund) and the structure, rights and transferability of the shares (should shareholders be permitted to transfer or exchange shares in the future).
+
+Information concerning the Fund's portfolio holdings as well as its dollar-weighted average portfolio maturity as of the last business day or any subsequent calendar day of the preceding month will be posted on its website no later than five business days after the end of the month and remain posted on the website for six months thereafter.
+
+In addition, the Fund files monthly with the SEC portfolio holdings and other information about the Fund and its portfolio as of the last business day of the preceding month (or any subsequent calendar day of such month) within five business days of the end of each month.
+
+A Qualifying Fund Shareholder is a shareholder who (i) has continuously owned of record, or beneficially through a financial intermediary, shares of the Fund having a net asset value of not less than two hundred and fifty thousand dollars ($250,000) during the 24-month period prior to submitting the recommendation; and (ii) provides a written notice to the Nominating and Governance Committee containing the following information: (a) the name and address of the Qualifying Fund Shareholder making the recommendation; (b) the number of shares of the Fund which are owned of record and beneficially by such Qualifying Fund Shareholder and the length of time that such shares have been so owned by the Qualifying Fund Shareholder; (c) a description of all arrangements and understandings between such Qualifying Fund Shareholder and any other person or persons (naming such person or persons) pursuant to which the recommendation is being made; (d) the name, age, date of birth, business address and residence address of the person or persons being recommended; (e) such other information regarding each person recommended by such Qualifying Fund Shareholder as would be required to be included in a proxy statement filed pursuant to the proxy rules of the SEC had the nominee been nominated by the board; (f) whether the shareholder making the recommendation believes the person recommended would or would not be an “interested person” of the Trust, as defined in the 1940 Act; and (g) the written consent of each person recommended to serve as a board member of the Trust if so nominated and elected/appointed.
+
+For the last three fiscal years ended March 31, FT Services was paid the following administration fees: 27 Fiscal Year Administration Fees Earned ($) Administration Fees Waived / Expenses Reimbursed ($) Administration Fees Paid (After Waivers / Expenses Reimbursed) ($) 2026 58,022 – 58,022 2025 57,779 – 57,779 2024 52,337 – 52,337 Shareholder servicing and transfer agent Franklin Templeton Investor Services, LLC (Investor Services) is the Fund's shareholder servicing agent and acts as the Fund's transfer agent and dividend-paying agent.
+
+In other cases, it is possible that the ability to participate in volume transactions may improve execution and reduce transaction costs to the Fund. 29 Distributions and Taxes The following discussion is a summary of certain additional tax considerations generally affecting the Fund and its shareholders, some of which may not be described in the Fund’s prospectus.
+
+Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.
+
+The Fund may distribute income dividends and capital gains more frequently, if necessary or appropriate in the board’s discretion.
+
+The amount of any distribution will vary, and there is no guarantee the Fund will pay either income dividends or capital gain distributions.
+
+Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.
+
+Distributions of net investment income.
+
+This income, less expenses incurred in the operation of the Fund, constitutes the Fund’s net investment income from which dividends may be paid to you.
+
+Any income dividends the Fund pays from this income will be taxable to you as ordinary income.
+
+Distributions of capital gains.
+
+Distributions of the Fund’s net short-term capital gains (if any) will be taxable to you as ordinary income.
+
+Net short-term capital gains will normally be included in ordinary income distributions only once a year, but may be included in these distributions more frequently to assist the Fund in maintaining a stable $1 offering price.
+
+If the Fund's distributions exceed its earnings and profits (i.e., generally, its taxable income and realized capital gains) for a taxable year, all or a portion of the distributions made in that taxable year may be characterized as a return of capital to you.
+
+A return of capital distribution will generally not be taxable, but will reduce the cost basis in your Fund shares and will result in a higher capital gain or in a lower capital loss when you sell your shares.
+
+In the case of a non-calendar year fund, earnings and profits are first allocated to distributions made on or before December 31 of its taxable year and then to distributions made thereafter.
+
+If the Fund elects to retain its net capital gain, it is expected that the Fund also will elect to have shareholders treated as if each received a distribution of its pro rata share of such gain, with the result that each shareholder will be required to report its pro rata share of such gain on its tax return as long-term capital gain, will receive a refundable tax credit for its pro rata share of tax paid by the Fund on the gain, and will increase the tax basis for its shares by an amount equal to the deemed distribution less the tax credit.
+
+Information on the amount and tax character of distributions The Fund will inform you of the amount of your income dividends at the time they are paid, and will advise you of their tax status for federal income tax purposes shortly after the close of each calendar year.
+
+Distribution requirement.
+
+The Fund must distribute an amount equal to the sum of at least 90% of its investment 30 company taxable income and 90% of its net tax-exempt income, if any, for the tax year (including, for purposes of satisfying this distribution requirement, certain distributions made by the Fund after the close of its taxable year that are treated as made during such taxable year).
+
+The Fund must derive at least 90% of its gross income from dividends, interest, certain payments with respect to securities loans, and gains from the sale or other disposition of stock, securities or foreign currencies, or other income (including, but not limited to, gains from options, futures or forward contracts) derived from its business of investing in such stock, securities or currencies and net income derived from qualified publicly traded partnerships (QPTPs).
+
+In other circumstances, the Fund may be required to sell portfolio holdings in order to meet the income requirement, distribution requirement, or asset diversification test, which may have a negative impact on the Fund’s income and performance.
+
+If for any taxable year the Fund does not qualify as a regulated investment company, all of its taxable income (including its net capital gain) would be subject to tax at the applicable corporate tax rate without any deduction for dividends paid to shareholders, and the dividends would be taxable to the shareholders as ordinary income (or possibly as qualified dividend income) to the extent of the Fund’s current and accumulated earnings and profits.
+
+In that case, the Fund would be liable for federal, and possibly state, corporate taxes on its taxable income and gains, and distributions to you would be taxed as dividend income to the extent of the Fund’s earnings and profits.
+
+Excise tax distribution requirements Required distributions.
+
+The Fund intends to declare and pay these distributions in December (or to pay them in January, in which case you must treat them as received in December), but can give no assurances that its distributions will be sufficient to eliminate all taxes. 31 Tax reporting for income and excise tax years.
+
+For example, if the Fund uses the excise tax period ending on October 31 as the measuring period for calculating and paying out capital gain net income and realizes a net capital loss between November 1 and the end of the Fund’s fiscal year, the Fund may calculate its earnings and profits without regard to such net capital loss in order to make its required distribution of capital gain net income for excise tax purposes.
+
+The effect of this election is to treat any such “qualified late year loss” as if it had been incurred in the succeeding taxable year, which may change the timing, amount, or characterization of Fund distributions.
+
+Medicare tax A 3.8% Medicare tax is imposed on net investment income earned by certain individuals, estates and trusts. “Net investment income,” for these purposes, means investment income, including ordinary dividends and capital gain distributions received from the Fund and net gains from redemptions or other taxable dispositions of Fund shares, reduced by the deductions properly allocable to such income.
+
+Under these laws, you may be subject to federal backup withholding at 24%, and state backup withholding may also apply, on a portion of your taxable distributions unless you: • provide your correct Social Security or taxpayer identification number, • certify that this number is correct, • certify that you are not subject to backup withholding, and • certify that you are a U.S. person (including a U.S. resident alien).
+
+Qualified dividends and the corporate dividends-received deduction Because the income of the Fund is primarily derived from investments earning interest rather than dividend income, generally none of its income dividends will be qualifying dividend income or dividends eligible for the corporate dividends-received deduction.
+
+Interest income pass through Final Treasury regulations issued in January 2021 allows the Fund to pass-through its 32 net business interest income (generally the Fund’s interest income less applicable expenses and deductions) as a “Section 163(j) interest dividend” to shareholders, provided certain conditions are met.
+
+Each year the Fund intends to report to shareholders the portion of the income dividends paid by the Fund that are eligible for treatment as interest income.
+
+States also grant tax-free status to mutual fund dividends paid to you from interest earned on these obligations, subject in some states to minimum investment or reporting requirements that must be met by the Fund.
+
+Distributions of ordinary income paid by the Fund to individual shareholders from interest earned on U.S.
+
+Shareholders should contact their tax advisors with respect to the state and local income tax consequences of investing in the Fund, including whether Fund dividends derived from interest on U.S. government obligations held by the Fund qualify for tax free treatment.
+
+In order to generate sufficient cash to make these distributions, the Fund may be required to sell securities in its portfolio that it otherwise might have continued to hold.
+
+The tax information furnished by the Fund to shareholders and the IRS annually with respect to the amount and character of dividends paid by the Fund will be prepared on the basis of current federal income tax law to comply with the information reporting requirements of the Code, and not necessarily on the basis of the law of any state in which a shareholder is resident or otherwise subject to tax.
+
+The United States imposes a flat 30% withholding tax (or a tax at a lower treaty rate) on U.S. source dividends.
+
+Exemptions from U.S. withholding tax are provided for capital gain dividends paid by the Fund from long-term capital gains, if any interest-related dividends paid by the Fund from its qualified net interest income from U.S. sources, and short-term capital gain dividends, unless you are a nonresident alien individual present in the United States for a period or periods aggregating 183 days or more during the calendar year. “Qualified interest income” includes, in general, the sum of the Fund’s U.S. source: i) bank deposit interest, ii) short-term original issue discount, iii) portfolio interest, and iv) any interest-related dividend passed through from another regulated investment company.
+
+However, notwithstanding such exemptions from U.S. withholding tax at source, any taxable distributions will be subject to backup withholding at a rate of 24% if you fail to properly certify that you are not a U.S. person.
+
+It may not be practical in every case for the Fund to report to shareholders, and the Fund reserves the right in these cases to not report, interest-related or short-term capital gain dividends.
+
+Additionally, the Fund’s reporting of interest-related or short-term capital gain dividends may not, in turn, be passed through to shareholders by intermediaries who have assumed tax reporting responsibilities for this income in managed or omnibus accounts due to systems limitations or operational constraints.
+
+Taxable ordinary income dividends paid by the Fund to non-U.S. investors on portfolio investments are generally subject to U.S. withholding tax at 30% or a lower treaty rate.
+
+Foreign Account Tax Compliance Act Under the Foreign Account Tax Compliance Act (FATCA), foreign entities, referred to as foreign financial institutions (FFI) or non-financial foreign entities (NFFE) that are shareholders in the Fund may be subject to a 30% withholding tax on income dividends paid by the Fund.
+
+You may purchase or redeem shares of the Fund at any time through the App or the Institutional Web Portal, although purchases and redemptions of Fund shares will only be processed during normal business hours on business days.
+
+If an investor becomes a Canadian resident after purchasing shares of the Fund, the investor will not be able to purchase any additional shares of the Fund (other than reinvestment of dividends and capital gains) or exchange shares of the Fund for other U.S. registered Franklin Templeton funds.
+
+Similarly, the Fund is not registered, and shares of the Fund have not been qualified for distribution, in any member country of the European Union (EU) or European Economic Area (EEA).
+
+If an investor becomes an EU or EEA resident after purchasing shares of the Fund, the investor will not be able to purchase any additional shares of the Fund (other than reinvestment of dividends and capital gains) or exchange shares of the Fund for other U.S. registered Franklin Templeton funds.
+
+These procedures include a daily calculation of the extent of deviation, if any, of the Fund's net asset value calculated by using available market quotations from the Fund’s amortized cost per share.
+
+If the board determines that a deviation exists that may result in material dilution or other unfair results to investors or existing shareholders, it will take corrective action that it regards as necessary and appropriate, which may include selling portfolio instruments before maturity to realize capital gains or losses or to shorten average portfolio maturity, withholding dividends, redeeming shares in kind, or establishing a net asset value per share by using available market quotations.
+
+Alternatively, the Fund may discontinue using the amortized cost method of valuation to maintain a stable $1.00 price per share and establish a fluctuating NAV per share rounded to four decimal places by using available market quotations or equivalents.
+
+If a fund were to float its NAV, it would no longer maintain a stable $1.00 share price and instead have a share price that fluctuates.
+
+An investor in a fund that floats its NAV would lose money if the investor sells their shares when they are worth less than what the investor originally paid for them.
+
+Dividends, including dividends reinvested in additional shares of the fund will nonetheless be fully taxable, even if the number of shares in shareholders’ accounts has been reduced through share cancellation.
+
+Additionally, a “(hyb)” indicator is appended to all ratings of hybrid securities issued by banks, insurers, finance companies, and securities firms. * * By their terms, hybrid securities allow for the omission of scheduled dividends, interest, or principal payments, which can potentially result in impairment if such an omission occurs.
+
+For non-hybrid capital instruments, the “D” rating category is used when payments on an obligation are not made on the date due, unless S&P Global Ratings believes that such payments will be made within the next five business days in the absence of a stated grace period or within the earlier of the stated grace period or the next 30 calendar days.
+
+However, any stated grace period longer than five business days will be treated as five business days.
+
+The following exhibits are incorporated by reference to the previously filed document indicated below, except as noted: (a) Agreement and Declaration of Trust (i) Certificate of Trust of Franklin Templeton Trust, a Delaware Statutory Trust, dated August 2, 2019 Filing: Initial Filing on Form N-1A File No. 811-23471 Filing Date: September 3, 2019 (ii) Agreement and Declaration of Trust of Franklin Templeton Trust, a Delaware Statutory Trust, dated August 2, 2019 Filing: Initial Filing on Form N-1A File No. 811-23471 Filing Date: September 3, 2019 (b) By-laws (i) By-Laws of Franklin Templeton Trust, a Delaware Statutory Trust, dated August 2, 2019 Filing: Initial Filing on Form N-1A File No. 811-23471 Filing Date: September 3, 2019 (c) Instruments Defining Rights of Security Holders (i) Agreement and Declaration of Trust (a)Article III, Shares (b) Article V, Shareholders’ Voting Powers and Meetings (c) Article VI, Net Asset Value; Distributions; Redemptions; Transfers (d) Article VIII, Certain Transactions: Section 4 (e) Article X, Miscellaneous: Section 4 (ii) By-Laws (a) Article II, Meetings of Shareholders (b) Article VI, Records and Reports: Section 1, 2 and 3 (c) Article VII, General Matters: Section 3, 4, 6 and 7 (d) Article VIII, Amendment: Section 1 (iii) Part B, Statement of Additional Information – Item 22 (d) Investment Advisory Contracts (i) Investment Management Agreement between Registrant and Franklin Advisers, Inc., dated as of April 6, 2021 Filing: Post-Effective Amendment No. 5 to Registration Statement on Form N-1A File No. 811-23471 Filing Date: July 31, 2023 (ii) Subadvisory Agreement dated May 18, 2026 between the Registrant, on behalf of Franklin OnChain U.S.
+
+Government Money Fund between Franklin Advisers, INC. and Western Asset Management Company, LLC (e) Underwriting Contracts (i) Distribution Agreement between Registrant and Franklin Distributors, LLC date July 7, 2022.
+

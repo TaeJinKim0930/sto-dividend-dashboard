@@ -1,0 +1,10 @@
+{
+  "dividend_declaration_timing": {"value": "each day when it makes its final net asset value calculation", "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation."},
+  "declares_on_non_business_days": {"value": null, "evidence": null},
+  "dividend_payment_form": {"value": "additional shares", "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends."},
+  "reinvestment_frequency": {"value": "daily", "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends."},
+  "fund_closed_days": {"value": "New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day", "evidence": "Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day."},
+  "share_price_target": {"value": "$1.00", "evidence": "The Fund uses the amortized cost method of valuation to seek to maintain a stable $1.00 share price and does not currently intend to impose liquidity fees on Fund redemptions."},
+  "expense_ratio": {"value": "0.20%", "evidence": "Total annual Fund operating expenses after fee waiver and/or expense reimbursement 0.20 %"},
+  "official_record": {"value": "a proprietary blockchain-integrated system", "evidence": "The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks."}
+}

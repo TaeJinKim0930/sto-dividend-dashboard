@@ -1,0 +1,10 @@
+{
+  "dividend_declaration_timing": {"value": "each day when it makes its final net asset value calculation", "evidence_ids": [52]},
+  "nav_calculation_days": {"value": "every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business", "evidence_ids": [41]},
+  "dividend_payment_form": {"value": null, "evidence_ids": []},
+  "reinvestment_frequency": {"value": "daily", "evidence_ids": [52, 55]},
+  "fund_closed_days": {"value": "New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day, weekends and may be closed for emergencies or unanticipated events", "evidence_ids": [42, 44, 45, 46]},
+  "share_price_target": {"value": "stable $1.00 share price", "evidence_ids": [2, 11]},
+  "expense_ratio": {"value": "0.20%", "evidence_ids": [6]},
+  "official_record": {"value": "via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks", "evidence_ids": [14, 19]}
+}

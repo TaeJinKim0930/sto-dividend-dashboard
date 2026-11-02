@@ -1,0 +1,77 @@
+{
+ "fund": "BENJI",
+ "source": "SEC EDGAR 485BPOS, 2026-08-01",
+ "model": "qwen2.5:32b",
+ "num_ctx": 16384,
+ "runs": 5,
+ "excerpt_chars": 11991,
+ "excerpts": 15,
+ "seconds": 685.8,
+ "dry_run": false,
+ "terms": {
+  "dividend_declaration_timing": {
+   "value": "each day when it makes its final net asset value calculation",
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "declares_on_non_business_days": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "not_stated": 5
+   }
+  },
+  "dividend_payment_form": {
+   "value": "additional shares",
+   "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "reinvestment_frequency": {
+   "value": "daily",
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "fund_closed_days": {
+   "value": "New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day",
+   "evidence": "The Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "share_price_target": {
+   "value": "$1.00",
+   "evidence": "The Fund also tries to maintain a stable $1.00 share price.",
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "expense_ratio": {
+   "value": null,
+   "evidence": null,
+   "agreement": 0.0,
+   "statuses": {
+    "rejected_evidence_not_in_source": 5
+   }
+  },
+  "official_record": {
+   "value": "a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks",
+   "evidence": "The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks.",
+   "agreement": 0.8,
+   "statuses": {
+    "verified": 5
+   }
+  }
+ }
+}

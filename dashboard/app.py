@@ -41,8 +41,14 @@ def balances(fl):
     return bal[bal > DUST].sort_values(ascending=False)
 
 
+def data_signature():
+    """데이터 파일이 바뀌면(재수집·GitHub 반영) 캐시를 새로 만들도록 파일 크기·수정 시각을 키로 쓴다."""
+    files = sorted(CLEAN.glob("*.*")) + [RAW / "benji_upgrades.csv", ROOT / "reports" / "benji_report.md"]
+    return tuple((f.name, f.stat().st_size, int(f.stat().st_mtime)) for f in files if f.exists())
+
+
 @st.cache_data
-def load():
+def load(sig):
     data = {}
     for f in ("buidl", "benji"):
         name = f.upper()
@@ -90,12 +96,13 @@ def load_ai():
     return {"terms": terms, "table": table, "report": rep, "comp": list(comp.values())}
 
 
-D = load()
+SIG = data_signature()
+D = load(SIG)
 FUNDS = ["BUIDL", "BENJI"]
 
 
 @st.cache_data
-def excel_bytes(f, classes, start, end):
+def excel_bytes(f, classes, start, end, sig):
     """필터 조합별로 한 번만 만든다 (매 화면 갱신마다 13,000건 Excel을 다시 쓰지 않도록)"""
     fl = D[f]["flows"]
     rev = {v: k for k, v in CLASS_KO.items()}
@@ -319,7 +326,7 @@ with tabs[6]:
     view = sel[["ts_kst", "date_et", "구분", "fn", "src", "dst", "amount", "tx_hash"]]
     st.write(f"{len(view):,}건")
     st.dataframe(view, width="stretch", height=380)
-    xbytes = excel_bytes(f, tuple(classes), rng[0], rng[1])
+    xbytes = excel_bytes(f, tuple(classes), rng[0], rng[1], SIG)
     d1, d2 = st.columns(2)
     d1.download_button("CSV 내려받기", view.to_csv(index=False).encode("utf-8-sig"), f"{f}_flows.csv", "text/csv")
     d2.download_button("Excel 내려받기 (거래 + 월별)", xbytes, f"{f}_flows.xlsx",

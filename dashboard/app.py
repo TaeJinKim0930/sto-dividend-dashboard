@@ -7,6 +7,7 @@
 """
 import io
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -233,6 +234,10 @@ with tabs[4]:
         t = ai["terms"]
         st.markdown(f"로컬 LLM(**{t['model']}**)이 BENJI 투자설명서 41만 자에서 조건이 적힌 문장을 **번호로 가리키고**, "
                     "판정은 **파이썬 규칙**이 내립니다. LLM 출력은 근거 검사·다수결·숫자 검사를 통과해야 채택합니다.")
+        period = re.search(r"배당 기록 기간: \S+ ~ (\S+)", ai["report"])
+        if period and str(period.group(1)) != str(last):
+            st.caption(f"AI 점검은 {period.group(1)}까지의 기록으로 실행한 결과입니다 (다른 탭은 {last} 기준). "
+                       "다음 GPU 실행 때 최신 데이터로 갱신됩니다.")
         vals = [v for v in t["terms"].values()]
         a, b, c, d = st.columns(4)
         a.metric("모델", t["model"])

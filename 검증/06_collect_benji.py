@@ -33,24 +33,12 @@ def key():
 
 
 def transfers():
-    rows, params = [], None
-    while True:
-        url = f"https://eth.blockscout.com/api/v2/tokens/{TOKEN}/transfers"
-        if params:
-            url += "?" + urllib.parse.urlencode(params)
-        d = get(url)
-        for it in d.get("items", []):
-            rows.append({
-                "timestamp": it.get("timestamp"), "block": it.get("block_number"),
-                "tx_hash": it.get("transaction_hash"), "log_index": it.get("log_index"),
-                "type": it.get("type"), "method": it.get("method"),
-                "from": (it.get("from") or {}).get("hash"), "to": (it.get("to") or {}).get("hash"),
-                "amount": int((it.get("total") or {}).get("value") or 0) / 10 ** DECIMALS,
-            })
-        params = d.get("next_page_params")
-        if not params:
-            break
-        time.sleep(0.35)
+    # 01_collect_buidl.py와 같은 일괄 조회(tokentx). log_index는 API 순서의 전체 순번
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("c01", os.path.join(HERE, "01_collect_buidl.py"))
+    c01 = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(c01)
+    rows = c01.collect(TOKEN, DECIMALS)
     with open(os.path.join(D, "benji_transfers.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader(); w.writerows(rows)

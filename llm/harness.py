@@ -190,7 +190,7 @@ def call_mock(kind, run, sid=None):
             real["reinvestment_frequency"] = ("monthly", f("reinvests them daily"))
         return json.dumps({k: {"value": v, "evidence_ids": e} for k, (v, e) in real.items()})
     if run == 0:
-        # 1회차: 9,999,999는 입력에 없는 숫자, 27.3은 그럴듯하지만 입력(27.4)과 다른 숫자,
+        # 1회차: 9,999,999는 입력에 없는 숫자, 27.3은 그럴듯하지만 입력(10-06 27.4, 11-15 27.5)과 다른 숫자,
         # '상충'·'선언되어야 하므로'는 v2·v2.1 실제 실행에서 phi4가 쓴 표현 → 모두 걸려 피드백 재시도가 돌아야 함
         # '보수'는 검토 필요 항목이 아님 → 버려져야 함
         return json.dumps({
@@ -198,8 +198,8 @@ def call_mock(kind, run, sid=None):
             "reasons": [{"item": "배당 선언일 (주말·휴일 포함 여부)",
                          "reason": "배당은 개장일에만 선언되어야 하므로 업그레이드 뒤 주말 지급 비율 27.3%는 문제다."},
                         {"item": "보수", "reason": "보수가 문서와 다를 수 있음."}]}, ensure_ascii=False)
-    return json.dumps({   # 피드백 뒤: 입력의 숫자만, 문서 사실과 관측된 차이만
-        "summary": "BENJI의 배당 선언일 항목이 검토 필요로 판정됐다. 업그레이드(2025-05-23) 뒤 주말 지급 비율이 27.4%로 관측됐다.",
+    return json.dumps({   # 피드백 뒤: 문서 사실과 관측된 차이만. 비율 숫자는 데이터 갱신마다 바뀌므로 넣지 않는다 (2026-11-16)
+        "summary": "BENJI의 배당 선언일 항목이 검토 필요로 판정됐다. 업그레이드(2025-05-23) 뒤 주말 지급이 관측됐다.",
         "reasons": [{"item": "배당 선언일 (주말·휴일 포함 여부)",
                      "reason": "문서는 NAV를 계산하는 날마다 배당을 선언한다고 적고 있고, 주말은 휴장일이다. "
                                "온체인에서는 업그레이드 뒤 주말 지급이 관측되어 사람의 확인이 필요하다."},

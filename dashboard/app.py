@@ -241,10 +241,13 @@ with tabs[4]:
         t = ai["terms"]
         st.markdown(f"로컬 LLM(**{t['model']}**)이 BENJI 투자설명서 41만 자에서 조건이 적힌 문장을 **번호로 가리키고**, "
                     "판정은 **파이썬 규칙**이 내립니다. LLM 출력은 근거 검사·다수결·숫자 검사를 통과해야 채택합니다.")
+        # AI 결과가 지금 데이터로 만든 것인지: 리포트의 BENJI 배당 기록 끝 날짜와 지금 데이터의 BENJI 마지막 배당일을 비교
+        # (거래 기준일과 비교하면 배당이 하루 늦게 찍히는 날마다 오래된 결과로 잘못 표시된다 — 2026-11-16 수정)
         period = re.search(r"배당 기록 기간: \S+ ~ (\S+)", ai["report"])
-        if period and str(period.group(1)) != str(last):
-            st.caption(f"AI 점검은 {period.group(1)}까지의 기록으로 실행한 결과입니다 (다른 탭은 {last} 기준). "
-                       "다음 GPU 실행 때 최신 데이터로 갱신됩니다.")
+        benji_last_div = D["BENJI"]["div"]["date_et"].max().date()
+        if period and str(period.group(1)) != str(benji_last_div):
+            st.caption(f"AI 점검은 BENJI 배당 기록 {period.group(1)}까지로 실행한 결과입니다 "
+                       f"(지금 데이터의 마지막 배당일은 {benji_last_div}). 다음 GPU 실행 때 최신 데이터로 갱신됩니다.")
         vals = [v for v in t["terms"].values()]
         a, b, c, d = st.columns(4)
         a.metric("모델", t["model"])

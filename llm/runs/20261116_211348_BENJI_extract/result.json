@@ -1,0 +1,126 @@
+{
+ "fund": "BENJI",
+ "source": "SEC EDGAR 485BPOS, 2026-08-01",
+ "harness": "v2.2",
+ "model": "mock",
+ "num_ctx": null,
+ "seconds": 0.0,
+ "dry_run": true,
+ "run_dir": "20261116_211348_BENJI_extract",
+ "runs": 3,
+ "excerpt_chars": 11967,
+ "sentences": 56,
+ "verified_rate": "16/24",
+ "statuses": {
+  "verified": 16,
+  "rejected_unknown_id": 3,
+  "rejected_value_not_in_evidence": 5
+ },
+ "terms": {
+  "dividend_declaration_timing": {
+   "value": "each day when it makes its final NAV calculation",
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation.",
+   "evidence_ids": [
+    22
+   ],
+   "evidence_sents": [
+    "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "nav_calculation_days": {
+   "value": "every day on which both the NYSE and FRBNY are open for business",
+   "evidence": "The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business.",
+   "evidence_ids": [
+    41
+   ],
+   "evidence_sents": [
+    "The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "dividend_payment_form": {
+   "value": "additional shares",
+   "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.",
+   "evidence_ids": [
+    25
+   ],
+   "evidence_sents": [
+    "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "reinvestment_frequency": {
+   "value": "daily",
+   "evidence": "Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.",
+   "evidence_ids": [
+    52
+   ],
+   "evidence_sents": [
+    "Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily."
+   ],
+   "agreement": 0.33,
+   "statuses": {
+    "verified": 1,
+    "rejected_value_not_in_evidence": 2
+   }
+  },
+  "fund_closed_days": {
+   "value": "weekends and holidays",
+   "evidence": "Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event. Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr.",
+   "evidence_ids": [
+    44,
+    42
+   ],
+   "evidence_sents": [
+    "Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
+    "Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  },
+  "share_price_target": {
+   "value": null,
+   "evidence": null,
+   "evidence_ids": [],
+   "agreement": 0.0,
+   "statuses": {
+    "rejected_unknown_id": 3
+   }
+  },
+  "expense_ratio": {
+   "value": null,
+   "evidence": null,
+   "evidence_ids": [],
+   "agreement": 0.0,
+   "statuses": {
+    "rejected_value_not_in_evidence": 3
+   }
+  },
+  "official_record": {
+   "value": "a proprietary blockchain-integrated system",
+   "evidence": "Use of Blockchain The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks.",
+   "evidence_ids": [
+    14
+   ],
+   "evidence_sents": [
+    "Use of Blockchain The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 3
+   }
+  }
+ }
+}

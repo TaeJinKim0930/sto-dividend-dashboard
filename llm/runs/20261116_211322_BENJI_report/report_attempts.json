@@ -1,0 +1,27 @@
+[
+ {
+  "attempt": 1,
+  "unknown_numbers": [
+   "27.3",
+   "9,999,999"
+  ],
+  "tone": [
+   "상충",
+   "선언되어야 하"
+  ]
+ },
+ {
+  "attempt": 2,
+  "unknown_numbers": [
+   "27.4"
+  ],
+  "tone": []
+ },
+ {
+  "attempt": 3,
+  "unknown_numbers": [
+   "27.4"
+  ],
+  "tone": []
+ }
+]

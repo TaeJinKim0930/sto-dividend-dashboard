@@ -6,9 +6,10 @@
 #
 #   powershell -ExecutionPolicy Bypass -File share.ps1          # open
 #   powershell -ExecutionPolicy Bypass -File share.ps1 -Stop    # close public access
+#   powershell -ExecutionPolicy Bypass -File share.ps1 -KeepAlive   # (task every 10 min) restart what is down, keep the address
 #
 # Anyone with the address can open the pages while public access is on.
-param([switch]$Stop)
+param([switch]$Stop, [switch]$KeepAlive)
 
 $Root = $PSScriptRoot
 $Logs = Join-Path $Root "logs"
@@ -18,12 +19,16 @@ $Ts = "C:\Program Files\Tailscale\tailscale.exe"
 $Cf = "C:\Program Files (x86)\cloudflared\cloudflared.exe"
 if (-not (Test-Path $Cf)) { $Cf = "cloudflared" }
 
-Get-Process cloudflared -ErrorAction SilentlyContinue | Stop-Process -Force
+$StopMark = Join-Path $Logs "share_stopped"   # set by -Stop so the 10-minute keep-alive does not reopen
 if ($Stop) {
+    Get-Process cloudflared -ErrorAction SilentlyContinue | Stop-Process -Force
     if (Test-Path $Ts) { & $Ts funnel reset *> $null }
     Remove-Item $Note -ErrorAction SilentlyContinue
+    New-Item -ItemType File -Force -Path $StopMark | Out-Null
     Write-Host "Public access closed."; exit 0
 }
+if ($KeepAlive -and (Test-Path $StopMark)) { exit 0 }
+Remove-Item $StopMark -ErrorAction SilentlyContinue
 
 # Agent code: agent/ inside this repo, or the working copy in %USERPROFILE%\projects\agent-spike
 $Agent = Join-Path $Root "agent"
@@ -77,6 +82,11 @@ Wait-Up "http://localhost:8501/_stcore/health" "Dashboard" 60
 
 # 4. Public addresses
 Write-Host "4/4 Public addresses"
+if ($KeepAlive -and (Test-Path $Note)) {   # address still answers: leave it as is
+    $known = (Get-Content $Note -Raw).Trim()
+    if ($known -and (Test-Up "$known/agent/health")) { exit 0 }
+}
+Get-Process cloudflared -ErrorAction SilentlyContinue | Stop-Process -Force
 $dashUrl = $null
 if (Test-Path $Ts) {
     for ($i = 0; $i -lt 30; $i++) {   # wait for Tailscale to connect after logon

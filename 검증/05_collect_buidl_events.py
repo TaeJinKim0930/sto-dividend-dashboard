@@ -5,7 +5,7 @@
 ABI: 구현체 DSToken ABI(data/buidl_impl_abi.json) + 프록시 ABI(Blockscout에서 조회)
 출력: data/buidl_events.csv  (event, block, ts_utc, tx_hash, log_index, args_json)
 """
-import csv, json, os, time, urllib.parse, urllib.request
+import csv, json, os, time, urllib.error, urllib.parse, urllib.request
 from eth_abi import decode
 from eth_utils import keccak, to_checksum_address
 
@@ -29,6 +29,12 @@ def get(url):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
                 return json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if i == 3:
+                raise
+            # 429(요청 과다): 서버가 알려 준 대기 시간 또는 30초·60초·90초 기다린 뒤 재시도 (2026-11-16, 일일 자동 실행 대비)
+            ra = e.headers.get("Retry-After") if e.headers else None
+            time.sleep(max(int(ra) if ra and ra.isdigit() else 0, 30 * (i + 1)) if e.code == 429 else 2 * (i + 1))
         except Exception:
             if i == 3:
                 raise

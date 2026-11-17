@@ -1,0 +1,124 @@
+@import "./components/agent-prism/theme/theme.css";
+@import "@xyflow/react/dist/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 색: 차가운 회백 바탕, 남색 글자, 상태 신호 네 가지(진행·결재 대기·통과·기각), 결재 도장용 인주색 */
+@layer base {
+  :root {
+    --background: 210 20% 97%;
+    --foreground: 215 30% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 30% 14%;
+    --popover: 215 30% 14%;
+    --popover-foreground: 210 20% 97%;
+    --primary: 222 70% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 18% 93%;
+    --secondary-foreground: 215 30% 14%;
+    --muted: 210 18% 93%;
+    --muted-foreground: 215 12% 42%;
+    --accent: 210 18% 93%;
+    --accent-foreground: 215 30% 14%;
+    --destructive: 9 61% 47%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 212 18% 88%;
+    --input: 212 18% 88%;
+    --ring: 222 70% 51%;
+    --radius: 0.5rem;
+    --run: 222 70% 51%;
+    --wait: 39 84% 43%;
+    --pass: 156 70% 30%;
+    --fail: 9 61% 47%;
+    --seal: 356 72% 46%;
+    --chart-1: 222 70% 51%;
+    --chart-2: 39 84% 43%;
+    --chart-3: 156 70% 30%;
+    --chart-4: 215 12% 60%;
+    --chart-5: 356 72% 46%;
+  }
+  .dark {
+    --background: 214 28% 10%;
+    --foreground: 210 25% 93%;
+    --card: 214 26% 13%;
+    --card-foreground: 210 25% 93%;
+    --popover: 210 25% 93%;
+    --popover-foreground: 214 28% 10%;
+    --primary: 222 85% 66%;
+    --primary-foreground: 214 28% 10%;
+    --secondary: 214 20% 18%;
+    --secondary-foreground: 210 25% 93%;
+    --muted: 214 20% 17%;
+    --muted-foreground: 213 12% 62%;
+    --accent: 214 20% 18%;
+    --accent-foreground: 210 25% 93%;
+    --destructive: 9 75% 63%;
+    --destructive-foreground: 214 28% 10%;
+    --border: 214 18% 22%;
+    --input: 214 18% 22%;
+    --ring: 222 85% 66%;
+    --run: 222 85% 66%;
+    --wait: 40 85% 58%;
+    --pass: 156 55% 50%;
+    --fail: 9 75% 63%;
+    --seal: 356 75% 60%;
+    --chart-1: 222 85% 66%;
+    --chart-2: 40 85% 58%;
+    --chart-3: 156 55% 50%;
+    --chart-4: 213 12% 50%;
+    --chart-5: 356 75% 60%;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "tnum" 1;
+    word-break: keep-all;
+  }
+}
+
+/* React Flow를 관제실 색에 맞춘다 */
+.react-flow {
+  --xy-background-color: transparent;
+  --xy-edge-stroke: hsl(var(--border));
+  --xy-edge-stroke-width: 1.5;
+}
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__edge.is-live .react-flow__edge-path {
+  stroke: hsl(var(--run));
+  stroke-width: 2.5;
+}
+.react-flow__edge.is-taken .react-flow__edge-path {
+  stroke: hsl(var(--muted-foreground) / 0.6);
+}
+.react-flow__edge-textbg {
+  fill: hsl(var(--background));
+}
+.react-flow__edge-text {
+  fill: hsl(var(--muted-foreground));
+  font-size: 11px;
+}
+
+@keyframes beacon {
+  0% { box-shadow: 0 0 0 0 hsl(var(--run) / 0.45); }
+  100% { box-shadow: 0 0 0 10px hsl(var(--run) / 0); }
+}
+.beacon {
+  animation: beacon 1.4s ease-out infinite;
+}
+@keyframes stamp {
+  0% { transform: scale(1.6) rotate(-14deg); opacity: 0; }
+  60% { transform: scale(0.94) rotate(-8deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+}
+.stamp-in {
+  animation: stamp 0.35s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .beacon, .stamp-in { animation: none; }
+}

@@ -4,7 +4,7 @@
 이동 기록: Blockscout (키 불필요) -> data/benji_transfers.csv
 업그레이드: ERC1967 Upgraded(address) 이벤트, Etherscan V2 getLogs (.env 키) -> data/benji_upgrades.csv
 """
-import csv, json, os, time, urllib.parse, urllib.request
+import csv, json, os, time, urllib.error, urllib.parse, urllib.request
 from eth_utils import keccak
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -20,6 +20,12 @@ def get(url):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
                 return json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if i == 3:
+                raise
+            # 429(요청 과다): 서버가 알려 준 대기 시간 또는 30초·60초·90초 기다린 뒤 재시도 (2026-11-16, 일일 자동 실행 대비)
+            ra = e.headers.get("Retry-After") if e.headers else None
+            time.sleep(max(int(ra) if ra and ra.isdigit() else 0, 30 * (i + 1)) if e.code == 429 else 2 * (i + 1))
         except Exception:
             if i == 3:
                 raise

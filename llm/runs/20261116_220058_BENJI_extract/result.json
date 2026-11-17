@@ -1,0 +1,141 @@
+{
+ "fund": "BENJI",
+ "source": "SEC EDGAR 485BPOS, 2026-08-01",
+ "harness": "v2.2",
+ "model": "phi4:14b",
+ "num_ctx": 16384,
+ "seconds": 37.3,
+ "dry_run": false,
+ "run_dir": "20261116_220058_BENJI_extract",
+ "runs": 5,
+ "excerpt_chars": 11967,
+ "sentences": 56,
+ "verified_rate": "40/40",
+ "statuses": {
+  "verified": 40
+ },
+ "terms": {
+  "dividend_declaration_timing": {
+   "value": "each day when it makes its final net asset value calculation",
+   "evidence": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation. Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.",
+   "evidence_ids": [
+    22,
+    52
+   ],
+   "evidence_sents": [
+    "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation.",
+    "Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "nav_calculation_days": {
+   "value": "every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business",
+   "evidence": "The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business.",
+   "evidence_ids": [
+    41
+   ],
+   "evidence_sents": [
+    "The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "dividend_payment_form": {
+   "value": "additional shares",
+   "evidence": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends. Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.",
+   "evidence_ids": [
+    25,
+    55
+   ],
+   "evidence_sents": [
+    "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.",
+    "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends."
+   ],
+   "agreement": 0.4,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "reinvestment_frequency": {
+   "value": "daily",
+   "evidence": "Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily.",
+   "evidence_ids": [
+    52
+   ],
+   "evidence_sents": [
+    "Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "fund_closed_days": {
+   "value": "the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day and Christmas Day. Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
+   "evidence": "Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr. Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
+   "evidence_ids": [
+    42,
+    44
+   ],
+   "evidence_sents": [
+    "Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr.",
+    "Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event."
+   ],
+   "agreement": 0.8,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "share_price_target": {
+   "value": "a stable $1.00 share price",
+   "evidence": "The Fund also tries to maintain a stable $1.00 share price. The Fund uses the amortized cost method of valuation to seek to maintain a stable $1.00 share price and does not currently intend to impose liquidity fees on Fund redemptions.",
+   "evidence_ids": [
+    2,
+    11
+   ],
+   "evidence_sents": [
+    "The Fund also tries to maintain a stable $1.00 share price.",
+    "The Fund uses the amortized cost method of valuation to seek to maintain a stable $1.00 share price and does not currently intend to impose liquidity fees on Fund redemptions."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "expense_ratio": {
+   "value": "0.20%",
+   "evidence": "The investment manager has agreed to waive fees and/or reimburse operating expenses (excluding certain non-routine expenses or costs, such as those relating to litigation, indemnification, reorganizations and liquidations) for the Fund so that the ratio of total annual fund operating expenses will not exceed 0.20% until July 31, 2027.",
+   "evidence_ids": [
+    6
+   ],
+   "evidence_sents": [
+    "The investment manager has agreed to waive fees and/or reimburse operating expenses (excluding certain non-routine expenses or costs, such as those relating to litigation, indemnification, reorganizations and liquidations) for the Fund so that the ratio of total annual fund operating expenses will not exceed 0.20% until July 31, 2027."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  },
+  "official_record": {
+   "value": "a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks",
+   "evidence": "Use of Blockchain The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks. Use of Blockchain The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks.",
+   "evidence_ids": [
+    14,
+    19
+   ],
+   "evidence_sents": [
+    "Use of Blockchain The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks.",
+    "Use of Blockchain The Fund’s transfer agent maintains the official record of share ownership via a proprietary blockchain-integrated system that utilizes features of traditional book-entry form and one or more public blockchain networks."
+   ],
+   "agreement": 1.0,
+   "statuses": {
+    "verified": 5
+   }
+  }
+ }
+}

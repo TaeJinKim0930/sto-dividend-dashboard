@@ -5,7 +5,7 @@ A70021 김태진
 
 - **대시보드:** https://sto-dividend-dashboard-oy5krt4u3fyya5btd2fjtz.streamlit.app/
 - **데이터 기준일:** 2026-11-16 (2026-11-16 재수집)
-- **진행 단계:** 데이터 수집·전처리·분석, 생성형 AI 조건 추출·리포트(최신 데이터 재실행), 대시보드 구현 완료 / 통합 파이프라인 구성 예정
+- **진행 단계:** 데이터 수집·전처리·분석, 생성형 AI 조건 추출·리포트, 대시보드, 통합 파이프라인(`main.py`)·매일 자동 실행, 멀티 에이전트 감사 관제실(시제품) 구현
 
 ---
 
@@ -122,6 +122,7 @@ A70021 김태진
 | AI 점검 리포트 | LLM 추출 결과, 판정, 리포트, 모델 비교 |
 | 이상 탐지 | 잔고로 설명되지 않는 배당 |
 | 원천 데이터 | 조건별 조회, CSV·Excel 내려받기 |
+| AI 감사 관제실 | 에이전트 여섯과 담당자가 조사·검증·감사·보고·결재하는 과정을 실시간으로 보는 화면 (GPU PC에서 관제실 서버를 켰을 때만 표시) |
 
 ---
 
@@ -131,6 +132,8 @@ A70021 김태진
 - **생성형 AI:** Ollama + phi4:14b
 - **Excel:** OpenPyXL(분석 데이터 내려받기)
 - **대시보드:** Streamlit
+- **AI 에이전트:** LangGraph(흐름·결재 대기), AG-UI(에이전트 → 화면 실시간 연결), Langfuse(실행 추적), Ollama gemma4:26b
+- **관제실 화면:** React, React Flow(에이전트 지도), AgentPrism(추적 기록), shadcn/ui·Tailwind(화면 틀), Recharts(지표)
 
 ---
 
@@ -142,8 +145,8 @@ A70021 김태진
 - '검토 필요'는 규정 위반 판단이 아닌 사람의 확인이 필요한 지점이라는 의미
 
 **기말까지 계획**
-- 수집부터 리포트까지 한 번에 실행되는 통합 파이프라인 구성
 - 발표 전 최신 데이터 재수집
+- 감사 관제실을 발표 노트북에서 볼 수 있도록 원격 접속 경로 마련
 
 ---
 
@@ -155,6 +158,9 @@ A70021 김태진
 | `llm/` | 생성형 AI 실행 코드(`harness.py`), 프롬프트, 실행 기록 |
 | `dashboard/` | Streamlit 대시보드 |
 | `reports/` | LLM이 작성한 점검 리포트 |
+| `main.py` | 수집 → 전처리 → 분석 → 문서 대조 → 생성형 AI → Excel까지 한 번에 실행 |
+| `run_daily.ps1` | Windows 작업 스케줄러로 매일 `main.py` 실행 (로그 30일 보관) |
+| `agent/` | AI 감사 관제실: 에이전트 그래프(`stack_a.py`·`report_agent.py`), 도구(`tools.py`), 서버(`console_api.py`), 화면(`console/`), Langfuse 설정(`langfuse/`) |
 
 ```bash
 pip install -r requirements.txt
@@ -163,3 +169,16 @@ streamlit run dashboard/app.py
 
 - 데이터 재수집: `.env.example`을 `.env`로 복사해 값 입력 후 `검증/` 스크립트를 번호 순서대로 실행
 - 생성형 AI 단계: Ollama와 GPU 필요
+- 전체 한 번에: `python main.py` (키가 없으면 수집, Ollama가 없으면 LLM 단계를 건너뜀)
+
+**AI 감사 관제실 (GPU PC)**
+
+```bash
+cd agent/langfuse && docker compose up -d          # .env.example → .env 채운 뒤
+cd agent && pip install -r requirements.txt         # .env.example → .env 에 Langfuse 키
+cd agent/console && npm install && npm run build
+cd agent && uvicorn console_api:api --port 8700     # http://localhost:8700
+```
+
+- Ollama에 `gemma4:26b-a4b-it-qat` 모델 필요
+- 대시보드의 'AI 감사 관제실' 탭이 이 서버 화면을 그대로 보여 줌. 다른 주소로 띄웠다면 환경변수 `AUDIT_CONSOLE_URL` 지정

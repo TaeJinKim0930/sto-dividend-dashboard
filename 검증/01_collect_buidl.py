@@ -5,7 +5,7 @@
   컬럼: timestamp, block, tx_hash, log_index, type, method, from, to, amount
   type: token_minting(발행) / token_burning(소각) / token_transfer(이전)
 """
-import csv, json, os, time, urllib.parse, urllib.request
+import csv, json, os, time, urllib.error, urllib.parse, urllib.request
 
 TOKEN = "0x7712c34205737192402172409a8f7ccef8aa2aec"   # BUIDL proxy
 DECIMALS = 6
@@ -20,6 +20,12 @@ def get(url, tries=4, timeout=40):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
                 return json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if i == tries - 1:
+                raise
+            # 429(요청 과다): 서버가 알려 준 대기 시간 또는 30초·60초·90초 기다린 뒤 재시도 (2026-11-16, 일일 자동 실행 대비)
+            ra = e.headers.get("Retry-After") if e.headers else None
+            time.sleep(max(int(ra) if ra and ra.isdigit() else 0, 30 * (i + 1)) if e.code == 429 else 2 * (i + 1))
         except Exception as e:
             if i == tries - 1:
                 raise

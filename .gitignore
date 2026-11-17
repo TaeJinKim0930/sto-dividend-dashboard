@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .env
 .claude/
+logs/
+# 에이전트 관제실
+agent/console/node_modules/
+agent/console/dist/
+agent/ctl/
+*.log

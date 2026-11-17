@@ -1,0 +1,10 @@
+# AI 감사 관제실 백엔드 (대시보드와 별도 가상환경 권장)
+langgraph==1.2.22
+langchain-core==1.8.1
+langchain-ollama==1.1.0
+langfuse==5.2.0
+ag-ui-langgraph[fastapi]==0.0.47
+fastapi==0.163.1
+uvicorn==0.54.0
+pandas==3.1.1
+requests==2.34.2

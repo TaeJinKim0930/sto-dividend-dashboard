@@ -1,4 +1,4 @@
-<!-- 생성: 2026-11-16 21:15 | harness v2.2 | dry_run=False | 모델: phi4:14b | 입력에 없는 숫자: 없음 | 단정·당위 표현: 없음 -->
+<!-- 생성: 2026-11-16 22:01 | harness v2.2 | dry_run=False | 모델: phi4:14b | 입력에 없는 숫자: 없음 | 단정·당위 표현: 없음 -->
 # BENJI 배당 점검 리포트
 
 > 판정은 파이썬 규칙이 내렸다. 요약과 '검토가 필요한 이유'만 로컬 LLM(phi4:14b)이 썼다.
@@ -6,7 +6,7 @@
 
 ## 요약
 
-BENJI의 배당 선언일에 관한 항목이 '검토 필요'로 판정되었습니다. 문서에 따르면 배당은 NAV 계산일에 선언되며, NYSE와 FRBNY가 열려 있는 날에만 NAV가 계산됩니다. 주말에는 휴장이기 때문에 주말 선언은 기대되지 않습니다. 그러나 온체인 데이터에서는 업그레이드 전에는 주말 지급이 0.0%였으나, 업그레이드 후에는 27.5%로 증가했습니다.
+BENJI의 배당 선언일에 관한 항목이 '검토 필요'로 판정되었습니다. 문서는 배당이 NAV 계산일에 선언되며, NYSE와 FRBNY가 열린 날에만 NAV가 계산된다고 명시하고 있습니다. 따라서 주말 선언은 기대되지 않습니다. 그러나 온체인 데이터에서는 2025-05-23 업그레이드 이후 주말 지급이 27.5%로 관측되었습니다. 이는 125회의 지급 중 0.0%에서 527회의 지급 중 27.5%로 증가한 것입니다.
 
 ## 검토가 필요한 항목
 
@@ -15,7 +15,7 @@ BENJI의 배당 선언일에 관한 항목이 '검토 필요'로 판정되었습
 - **문서 원문:** "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation. / Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily. / The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business. / Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event."
 - **온체인 관측:** 업그레이드(2025-05-23) 전 주말 지급 0.0% (125회) -> 후 27.5% (527회)
 - **판정 규칙:** 문서: 배당은 NAV 계산일에 선언 + NAV는 NYSE·FRBNY가 여는 날에만 계산 + 주말 휴장 → 주말 선언 없음이 기대됨. 온체인 주말 지급 > 0 → 검토 필요
-- **검토가 필요한 이유:** 문서는 배당이 NAV 계산일에 선언되며, NYSE와 FRBNY가 열려 있는 날에만 NAV가 계산된다고 적고 있습니다. 주말에는 휴장이기 때문에 주말 선언은 기대되지 않습니다. 그러나 온체인 데이터에서는 업그레이드 전에는 주말 지급이 0.0%였으나, 업그레이드 후에는 27.5%로 증가했습니다.
+- **검토가 필요한 이유:** 문서는 배당이 NAV 계산일에 선언되며, NAV는 NYSE와 FRBNY가 열린 날에만 계산된다고 명시하고 있습니다. 따라서 주말 선언은 기대되지 않습니다. 그러나 온체인 데이터에서는 2025-05-23 업그레이드 이후 주말 지급이 27.5%로 관측되었습니다. 이는 125회의 지급 중 0.0%에서 527회의 지급 중 27.5%로 증가한 것입니다.
 
 ## 문서와 일치하는 항목
 

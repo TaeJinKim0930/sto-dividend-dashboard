@@ -7,13 +7,16 @@
 """
 import io
 import json
+import os
 import re
+import urllib.request
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+import streamlit.components.v1 as components
 
 ROOT = Path(__file__).resolve().parents[1]
 CLEAN = ROOT / "검증" / "data" / "clean"
@@ -138,7 +141,8 @@ for col, f in zip(cols, FUNDS):
         st.caption(f"운영 중 컨트랙트 업그레이드 {len(D['upgrades'][f])}회"
                    + (f" ({', '.join(D['upgrades'][f])})" if D["upgrades"][f] else ""))
 
-tabs = st.tabs(["배당 지급률", "자금 흐름", "지급 요일", "문서 대 온체인", "AI 점검 리포트", "이상 탐지", "원천 데이터"])
+tabs = st.tabs(["배당 지급률", "자금 흐름", "지급 요일", "문서 대 온체인", "AI 점검 리포트", "이상 탐지", "원천 데이터",
+                "AI 감사 관제실"])
 
 # ---------------- 1. 배당 지급률 ----------------
 with tabs[0]:
@@ -334,3 +338,23 @@ with tabs[6]:
     d1.download_button("CSV 내려받기", view.to_csv(index=False).encode("utf-8-sig"), f"{f}_flows.csv", "text/csv")
     d2.download_button("Excel 내려받기 (거래 + 월별)", xbytes, f"{f}_flows.xlsx",
                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+# ---------------- 8. AI 감사 관제실 ----------------
+# 에이전트 관제실은 GPU PC에서 도는 별도 서버(agent/console_api.py, 포트 8700)라서 화면을 통째로 끼운다.
+# 다른 주소(https 터널 등)로 띄웠다면 환경변수 AUDIT_CONSOLE_URL로 바꾼다.
+with tabs[7]:
+    console_url = os.environ.get("AUDIT_CONSOLE_URL", "http://localhost:8700").rstrip("/")
+    try:
+        with urllib.request.urlopen(console_url + "/agent/health", timeout=2) as r:
+            console_up = r.status == 200
+    except Exception:
+        console_up = False
+    st.markdown("에이전트 여섯(총괄·문서 분석·조사·검증·감사·보고)과 담당자가 BENJI 배당 기록을 조사합니다. "
+                "**조사 시작**을 누르면 에이전트가 움직이는 모습이 지도에 나타나고, 검증과 감사를 통과한 건은 "
+                "보고서와 함께 결재란으로 올라옵니다. LLM은 이 PC의 GPU(Ollama)에서 돕니다.")
+    if console_up:
+        st.caption(f"관제실 화면: {console_url} · [새 창으로 크게 보기]({console_url})")
+        components.iframe(console_url, height=960, scrolling=True)
+    else:
+        st.info(f"관제실 서버({console_url})에 연결되지 않습니다. GPU PC에서 Langfuse(docker)와 관제실 서버를 켠 뒤 "
+                "이 탭을 다시 여세요. 클라우드 배포본에서는 GPU PC 주소를 AUDIT_CONSOLE_URL로 지정해야 보입니다.")

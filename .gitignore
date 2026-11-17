@@ -8,3 +8,6 @@ agent/console/node_modules/
 agent/console/dist/
 agent/ctl/
 *.log
+
+# 외부 접속 스크립트가 적는 관제실 주소
+dashboard/.console_url

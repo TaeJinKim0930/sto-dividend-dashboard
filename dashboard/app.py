@@ -341,14 +341,24 @@ with tabs[6]:
 
 # ---------------- 8. AI 감사 관제실 ----------------
 # 에이전트 관제실은 GPU PC에서 도는 별도 서버(agent/console_api.py, 포트 8700)라서 화면을 통째로 끼운다.
-# 다른 주소(https 터널 등)로 띄웠다면 환경변수 AUDIT_CONSOLE_URL로 바꾼다.
+# 주소 후보: 환경변수 AUDIT_CONSOLE_URL → 외부 접속 스크립트가 적어 둔 dashboard/.console_url(터널 주소) → 이 PC.
+# 화면은 보는 사람 브라우저가 직접 여므로, 다른 기기에서 볼 때는 터널 주소가 잡혀 있어야 한다.
+def console_address():
+    note = Path(__file__).with_name(".console_url")
+    cands = [os.environ.get("AUDIT_CONSOLE_URL"), note.read_text(encoding="utf-8-sig").strip() if note.exists() else None,
+             "http://localhost:8700"]
+    for url in [c.rstrip("/") for c in cands if c]:
+        try:
+            with urllib.request.urlopen(url + "/agent/health", timeout=3) as r:
+                if r.status == 200:
+                    return url, True
+        except Exception:
+            pass
+    return "http://localhost:8700", False
+
+
 with tabs[7]:
-    console_url = os.environ.get("AUDIT_CONSOLE_URL", "http://localhost:8700").rstrip("/")
-    try:
-        with urllib.request.urlopen(console_url + "/agent/health", timeout=2) as r:
-            console_up = r.status == 200
-    except Exception:
-        console_up = False
+    console_url, console_up = console_address()
     st.markdown("에이전트 여섯(총괄·문서 분석·조사·검증·감사·보고)과 담당자가 BENJI 배당 기록을 조사합니다. "
                 "**조사 시작**을 누르면 에이전트가 움직이는 모습이 지도에 나타나고, 검증과 감사를 통과한 건은 "
                 "보고서와 함께 결재란으로 올라옵니다. LLM은 이 PC의 GPU(Ollama)에서 돕니다.")
@@ -357,4 +367,4 @@ with tabs[7]:
         components.iframe(console_url, height=960, scrolling=True)
     else:
         st.info(f"관제실 서버({console_url})에 연결되지 않습니다. GPU PC에서 Langfuse(docker)와 관제실 서버를 켠 뒤 "
-                "이 탭을 다시 여세요. 클라우드 배포본에서는 GPU PC 주소를 AUDIT_CONSOLE_URL로 지정해야 보입니다.")
+                "이 탭을 다시 여세요. 다른 기기나 클라우드 배포본에서는 GPU PC에서 외부 접속 스크립트(share.ps1)를 켜야 보입니다.")

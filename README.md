@@ -160,6 +160,7 @@ A70021 김태진
 | `reports/` | LLM이 작성한 점검 리포트 |
 | `main.py` | 수집 → 전처리 → 분석 → 문서 대조 → 생성형 AI → Excel까지 한 번에 실행 |
 | `run_daily.ps1` | Windows 작업 스케줄러로 매일 `main.py` 실행 (로그 30일 보관) |
+| `share.ps1` | 관제실·대시보드를 켜고 Tailscale Funnel(없으면 Cloudflare 임시 터널)로 외부 https 주소를 엶. 로그온 시 자동 실행 |
 | `agent/` | AI 감사 관제실: 에이전트 그래프(`stack_a.py`·`report_agent.py`), 도구(`tools.py`), 서버(`console_api.py`), 화면(`console/`), Langfuse 설정(`langfuse/`) |
 
 ```bash
@@ -181,4 +182,4 @@ cd agent && uvicorn console_api:api --port 8700     # http://localhost:8700
 ```
 
 - Ollama에 `gemma4:26b-a4b-it-qat` 모델 필요
-- 대시보드의 'AI 감사 관제실' 탭이 이 서버 화면을 그대로 보여 줌. 다른 주소로 띄웠다면 환경변수 `AUDIT_CONSOLE_URL` 지정
+- 대시보드의 'AI 감사 관제실' 탭이 이 서버 화면을 그대로 보여 줌. 다른 기기에서 보려면 `share.ps1` 실행 (또는 환경변수 `AUDIT_CONSOLE_URL` 지정)

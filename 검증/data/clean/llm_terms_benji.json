@@ -4,9 +4,9 @@
  "harness": "v2.2",
  "model": "phi4:14b",
  "num_ctx": 16384,
- "seconds": 37.3,
+ "seconds": 45.2,
  "dry_run": false,
- "run_dir": "20261116_220058_BENJI_extract",
+ "run_dir": "20261117_100156_BENJI_extract",
  "runs": 5,
  "excerpt_chars": 11967,
  "sentences": 56,
@@ -56,7 +56,7 @@
     "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.",
     "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends."
    ],
-   "agreement": 0.4,
+   "agreement": 1.0,
    "statuses": {
     "verified": 5
    }

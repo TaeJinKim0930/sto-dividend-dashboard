@@ -1,0 +1,853 @@
+{
+ "summary": {
+  "runs": 20,
+  "items": 60,
+  "avg_run_sec": 15.7,
+  "rejected_by_code": 20,
+  "passed_citation_check": 40,
+  "report_reject": 20,
+  "report_approve": 20,
+  "suspect_words_in_passed": 20,
+  "suspect_and_report_reject": 20,
+  "no_suspect_but_report_reject": 0,
+  "by_case": {
+   "weekend": {
+    "items": 20,
+    "passed": 20,
+    "report_reject": 20
+   },
+   "redeem": {
+    "items": 20,
+    "passed": 20,
+    "report_reject": 0
+   },
+   "bridge": {
+    "items": 20,
+    "passed": 0,
+    "report_reject": 0
+   }
+  }
+ },
+ "rows": [
+  {
+   "run": 0,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 29.3
+  },
+  {
+   "run": 0,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 29.3
+  },
+  {
+   "run": 0,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 29.3
+  },
+  {
+   "run": 1,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.7
+  },
+  {
+   "run": 1,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.7
+  },
+  {
+   "run": 1,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.7
+  },
+  {
+   "run": 2,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.7
+  },
+  {
+   "run": 2,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.7
+  },
+  {
+   "run": 2,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.7
+  },
+  {
+   "run": 3,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.7
+  },
+  {
+   "run": 3,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.7
+  },
+  {
+   "run": 3,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.7
+  },
+  {
+   "run": 4,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.7
+  },
+  {
+   "run": 4,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.7
+  },
+  {
+   "run": 4,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.7
+  },
+  {
+   "run": 5,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.8
+  },
+  {
+   "run": 5,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.8
+  },
+  {
+   "run": 5,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.8
+  },
+  {
+   "run": 6,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.1
+  },
+  {
+   "run": 6,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.1
+  },
+  {
+   "run": 6,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.1
+  },
+  {
+   "run": 7,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.1
+  },
+  {
+   "run": 7,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.1
+  },
+  {
+   "run": 7,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.1
+  },
+  {
+   "run": 8,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.1
+  },
+  {
+   "run": 8,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.1
+  },
+  {
+   "run": 8,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.1
+  },
+  {
+   "run": 9,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.1
+  },
+  {
+   "run": 9,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.1
+  },
+  {
+   "run": 9,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.1
+  },
+  {
+   "run": 10,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.9
+  },
+  {
+   "run": 10,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.9
+  },
+  {
+   "run": 10,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.9
+  },
+  {
+   "run": 11,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.7
+  },
+  {
+   "run": 11,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.7
+  },
+  {
+   "run": 11,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.7
+  },
+  {
+   "run": 12,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 14.9
+  },
+  {
+   "run": 12,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 14.9
+  },
+  {
+   "run": 12,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 14.9
+  },
+  {
+   "run": 13,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.1
+  },
+  {
+   "run": 13,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.1
+  },
+  {
+   "run": 13,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.1
+  },
+  {
+   "run": 14,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.4
+  },
+  {
+   "run": 14,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.4
+  },
+  {
+   "run": 14,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.4
+  },
+  {
+   "run": 15,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.4
+  },
+  {
+   "run": 15,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.4
+  },
+  {
+   "run": 15,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.4
+  },
+  {
+   "run": 16,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.1
+  },
+  {
+   "run": 16,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.1
+  },
+  {
+   "run": 16,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.1
+  },
+  {
+   "run": 17,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.2
+  },
+  {
+   "run": 17,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.2
+  },
+  {
+   "run": 17,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.2
+  },
+  {
+   "run": 18,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.3
+  },
+  {
+   "run": 18,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.3
+  },
+  {
+   "run": 18,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.3
+  },
+  {
+   "run": 19,
+   "case": "weekend",
+   "claim": "2025-05-23에 진행된 업그레이드 이후 사용자 수가 125명에서 528명으로 27.5% 증가한 것으로 보입니다. 첫 주말 배당은 업그레이드 시점과 인접한 2025-05-31에 시작된 것으로 추정됩니다.",
+   "verify_audit_pass": true,
+   "report": "반려 권고",
+   "meaning_errors": [
+    "125: 사용자 수 → 업그레이드 전 배당 지급 건수",
+    "528: 사용자 수 → 업그레이드 후 배당 지급 건수",
+    "27.5: 사용자 수 증가율 → 업그레이드 후 배당 중 주말에 지급된 비율(%)"
+   ],
+   "suspect_words": [
+    "사용자",
+    "명에서",
+    "명으로"
+   ],
+   "decision": "반려",
+   "run_sec": 15.5
+  },
+  {
+   "run": 19,
+   "case": "redeem",
+   "claim": "11월 4일에 발생한 환매 이벤트는 총 2건이며 규모는 32335719.34달러로 집계됩니다. 해당 데이터가 기록된 날짜와 일치하는 것으로 보입니다.",
+   "verify_audit_pass": true,
+   "report": "승인 권고",
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "승인",
+   "run_sec": 15.5
+  },
+  {
+   "run": 19,
+   "case": "bridge",
+   "claim": "브릿지 흐름을 통한 자금 이동은 0으로 나타납니다. 주말 배당이 다른 체인으로의 물량 이동 때문이라는 가설은 데이터상으로 확인되지 않을 수 있습니다.",
+   "verify_audit_pass": false,
+   "report": null,
+   "meaning_errors": [],
+   "suspect_words": [],
+   "decision": "검증에서 기각",
+   "run_sec": 15.5
+  }
+ ]
+}

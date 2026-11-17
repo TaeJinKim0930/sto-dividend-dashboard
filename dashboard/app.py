@@ -16,7 +16,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-import streamlit.components.v1 as components
 
 ROOT = Path(__file__).resolve().parents[1]
 CLEAN = ROOT / "검증" / "data" / "clean"
@@ -364,7 +363,7 @@ with tabs[7]:
                 "보고서와 함께 결재란으로 올라옵니다. LLM은 이 PC의 GPU(Ollama)에서 돕니다.")
     if console_up:
         st.caption(f"관제실 화면: {console_url} · [새 창으로 크게 보기]({console_url})")
-        components.iframe(console_url, height=960, scrolling=True)
+        st.iframe(console_url, height=960)
     else:
         st.info(f"관제실 서버({console_url})에 연결되지 않습니다. GPU PC에서 Langfuse(docker)와 관제실 서버를 켠 뒤 "
                 "이 탭을 다시 여세요. 다른 기기나 클라우드 배포본에서는 GPU PC에서 외부 접속 스크립트(share.ps1)를 켜야 보입니다.")

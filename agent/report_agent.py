@@ -37,12 +37,27 @@ def _flat(o, path=""):
         yield path, o
 
 
+KO_DATE = re.compile(r"(?:(\d{4})년\s*)?(\d{1,2})월\s*(\d{1,2})일")
+
+
 def _numbers(claim: str):
+    """주장 속 숫자. 날짜는 숫자로 쪼개지 않고 날짜 하나로 본다 ('11월 4일'의 11을 건수처럼 대조하지 않게)."""
     text = claim.replace(",", "")
     dates = re.findall(r"\d{4}-\d{2}-\d{2}", text)
     rest = re.sub(r"\d{4}-\d{2}-\d{2}(T[\d:]+Z?)?", " ", text)
+    dates += [m.group(0) for m in KO_DATE.finditer(rest)]
+    rest = KO_DATE.sub(" ", rest)
     nums = [n for n in re.findall(r"\d+(?:\.\d+)?", rest) if not (n.isdigit() and int(n) <= 10)]
     return list(dict.fromkeys(dates + nums))
+
+
+def _date_key(n: str):
+    """'2026년 11월 4일' → '2026-11-04', '11월 4일' → '-11-04' (도구 결과의 날짜 글자와 맞춰 보는 열쇠)."""
+    m = KO_DATE.fullmatch(n)
+    if not m:
+        return n
+    y, mo, d = m.groups()
+    return f"{y}-{int(mo):02d}-{int(d):02d}" if y else f"-{int(mo):02d}-{int(d):02d}"
 
 
 def map_numbers(claim: str, evidence: dict) -> list:
@@ -51,7 +66,12 @@ def map_numbers(claim: str, evidence: dict) -> list:
     flat = list(_flat(evidence))
     for n in _numbers(claim):
         hit = None
+        key = _date_key(n)
         for path, v in flat:
+            if key != n:                       # 한국어 날짜는 날짜 글자 칸에서만 찾는다
+                if isinstance(v, str) and key in v:
+                    hit = (path, v); break
+                continue
             if isinstance(v, (int, float)) and not isinstance(v, bool):
                 try:
                     if abs(float(v) - float(n)) < 1e-9:

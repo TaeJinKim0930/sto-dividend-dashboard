@@ -4,7 +4,7 @@
   "item": "배당 선언 시점",
   "doc_quote": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation.",
   "doc_source": "SEC EDGAR 485BPOS, Franklin Templeton Trust, 2026-08-01",
-  "chain": "업그레이드(2025-05-23) 전 주말 지급 0% (125회) -> 이후 27% (528회). 업그레이드 뒤 토·일요일에도 배당 토큰 발행",
+  "chain": "업그레이드(2025-05-23) 전 주말 지급 0% (125회) -> 이후 27% (529회). 업그레이드 뒤 토·일요일에도 배당 토큰 발행",
   "verdict": "검토 필요",
   "note": "같은 문서에 펀드가 주말·공휴일 휴장한다고 명시(NAV 미계산일). 'reinvests them daily' 문구와 함께 해석해야 함",
   "quote_verified": true
@@ -34,7 +34,7 @@
   "item": "배당 지급 형태",
   "doc_quote": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.",
   "doc_source": "SEC EDGAR 485BPOS, Franklin Templeton Trust, 2026-08-01",
-  "chain": "배당 654회 모두 신규 토큰 발행으로 지급. 현금성 이전 없음",
+  "chain": "배당 655회 모두 신규 토큰 발행으로 지급. 현금성 이전 없음",
   "verdict": "일치",
   "note": "",
   "quote_verified": true

@@ -4,16 +4,15 @@
  "harness": "v2.2",
  "model": "phi4:14b",
  "num_ctx": 16384,
- "seconds": 40.4,
+ "seconds": 43.5,
  "dry_run": false,
- "run_dir": "20261118_100057_BENJI_extract",
+ "run_dir": "20261119_100135_BENJI_extract",
  "runs": 5,
  "excerpt_chars": 11967,
  "sentences": 56,
- "verified_rate": "38/40",
+ "verified_rate": "40/40",
  "statuses": {
-  "verified": 38,
-  "rejected_value_not_in_evidence": 2
+  "verified": 40
  },
  "terms": {
   "dividend_declaration_timing": {
@@ -57,7 +56,7 @@
     "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends.",
     "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends."
    ],
-   "agreement": 0.4,
+   "agreement": 0.8,
    "statuses": {
     "verified": 5
    }
@@ -87,7 +86,7 @@
     "Therefore, the Fund will be closed on the days on which the following holidays are observed: New Year’s Day, Martin Luther King, Jr.",
     "Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event."
    ],
-   "agreement": 0.8,
+   "agreement": 1.0,
    "statuses": {
     "verified": 5
    }
@@ -117,10 +116,9 @@
    "evidence_sents": [
     "The investment manager has agreed to waive fees and/or reimburse operating expenses (excluding certain non-routine expenses or costs, such as those relating to litigation, indemnification, reorganizations and liquidations) for the Fund so that the ratio of total annual fund operating expenses will not exceed 0.20% until July 31, 2027."
    ],
-   "agreement": 0.6,
+   "agreement": 1.0,
    "statuses": {
-    "verified": 3,
-    "rejected_value_not_in_evidence": 2
+    "verified": 5
    }
   },
   "official_record": {

@@ -4,7 +4,7 @@
 A70021 김태진
 
 - **대시보드:** https://sto-dividend-dashboard-oy5krt4u3fyya5btd2fjtz.streamlit.app/
-- **데이터 기준일:** 2026-11-17 (미국 동부 기준, 2026-11-18 재수집. 매일 10시 자동 갱신)
+- **데이터 기준일:** 2026-11-18 (미국 동부 기준, 2026-11-19 재수집. 매일 10시 자동 갱신)
 - **진행 단계:** 데이터 수집·전처리·분석, 생성형 AI 조건 추출·리포트, 대시보드, 통합 파이프라인(`main.py`)·매일 자동 실행, 멀티 에이전트 감사 관제실(시제품) 구현
 
 ---
@@ -32,8 +32,8 @@ A70021 김태진
 
 | 데이터 | 출처 | 수집 방법 | 규모 | 기간 |
 |---|---|---|---|---|
-| BUIDL(BlackRock) 토큰 거래 기록 | Blockscout | API | 17,589건 | 2024-03-04 ~ 2026-11-17 |
-| BENJI(Franklin Templeton) 토큰 거래 기록 | Blockscout | API | 1,965건 | 2024-11-20 ~ 2026-11-17 |
+| BUIDL(BlackRock) 토큰 거래 기록 | Blockscout | API | 17,620건 | 2024-03-04 ~ 2026-11-18 |
+| BENJI(Franklin Templeton) 토큰 거래 기록 | Blockscout | API | 1,968건 | 2024-11-20 ~ 2026-11-18 |
 | BUIDL 소각 사유 이벤트 | Etherscan | API | 227건 | BUIDL 거래 기록과 같은 기간 |
 | BENJI 컨트랙트 업그레이드 이력 | Etherscan | API | 6건 | 2024-08-22 ~ 2026-02-12 |
 | BENJI 투자설명서 원문 | 미국 SEC EDGAR | 웹 스크래핑 (BeautifulSoup) | 약 41만 자 | 2026-08-01 개정판 |

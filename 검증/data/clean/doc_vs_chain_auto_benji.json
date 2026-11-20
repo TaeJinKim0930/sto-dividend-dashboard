@@ -2,7 +2,7 @@
  {
   "item": "배당 선언일 (주말·휴일 포함 여부)",
   "doc_quote": "The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value (NAV) calculation. / Distributions The Fund intends to declare income dividends from its net investment income each day when it makes its final net asset value calculation and reinvests them daily. / The Fund is open for business and calculates its NAV every day on which both the New York Stock Exchange (NYSE) and the Federal Reserve Bank of New York (FRBNY) are open for business. / Both the NYSE and FRBNY are also closed on weekends and may be closed because of an emergency or other unanticipated event.",
-  "chain": "업그레이드(2025-05-23) 전 주말 지급 0.0% (125회) -> 후 27.4% (530회)",
+  "chain": "업그레이드(2025-05-23) 전 주말 지급 0.0% (125회) -> 후 27.3% (531회)",
   "verdict": "검토 필요",
   "rule": "문서: 배당은 NAV 계산일에 선언 + NAV는 NYSE·FRBNY가 여는 날에만 계산 + 주말 휴장 → 주말 선언 없음이 기대됨. 온체인 주말 지급 > 0 → 검토 필요",
   "doc_facts": {
@@ -14,7 +14,7 @@
  {
   "item": "배당 지급 형태",
   "doc_quote": "Your income dividends and capital gain distributions will be automatically reinvested in additional shares at NAV on the payable date, which has the effect of compounding of dividends. Your income dividends and capital gain distributions will be automatically reinvested in additional shares at net asset value on the payable date, which has the effect of compounding of dividends.",
-  "chain": "배당 656회 모두 신규 토큰 발행(mint)",
+  "chain": "배당 657회 모두 신규 토큰 발행(mint)",
   "verdict": "일치",
   "rule": "문서가 추가 지분 지급 & 온체인이 토큰 발행 → 일치"
  },

@@ -4,15 +4,16 @@
  "harness": "v2.2",
  "model": "phi4:14b",
  "num_ctx": 16384,
- "seconds": 43.5,
+ "seconds": 42.9,
  "dry_run": false,
- "run_dir": "20261119_100135_BENJI_extract",
+ "run_dir": "20261120_100104_BENJI_extract",
  "runs": 5,
  "excerpt_chars": 11967,
  "sentences": 56,
- "verified_rate": "40/40",
+ "verified_rate": "39/40",
  "statuses": {
-  "verified": 40
+  "verified": 39,
+  "rejected_value_not_in_evidence": 1
  },
  "terms": {
   "dividend_declaration_timing": {
@@ -116,9 +117,10 @@
    "evidence_sents": [
     "The investment manager has agreed to waive fees and/or reimburse operating expenses (excluding certain non-routine expenses or costs, such as those relating to litigation, indemnification, reorganizations and liquidations) for the Fund so that the ratio of total annual fund operating expenses will not exceed 0.20% until July 31, 2027."
    ],
-   "agreement": 1.0,
+   "agreement": 0.8,
    "statuses": {
-    "verified": 5
+    "verified": 4,
+    "rejected_value_not_in_evidence": 1
    }
   },
   "official_record": {
